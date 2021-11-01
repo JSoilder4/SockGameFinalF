@@ -3,7 +3,26 @@
 	"plugin-id": "Sprite",
 	"sid": 946594074137771,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Cold",
+			"type": "boolean",
+			"desc": "",
+			"sid": 473660003239997
+		},
+		{
+			"name": "Neutral",
+			"type": "boolean",
+			"desc": "",
+			"sid": 486938730165489
+		},
+		{
+			"name": "ColdMeter",
+			"type": "number",
+			"desc": "",
+			"sid": 516540421013339
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",

@@ -1,5 +1,385 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 463136602569204
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "placeholderPlayer",
+					"sid": 811708757031560,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 213896199423157,
+					"parameters": {
+						"instance-variable": "Cold",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "placeholderPlayer",
+					"sid": 990634796042135,
+					"disabled": true,
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "placeholderPlayer",
+					"sid": 822791353592927,
+					"parameters": {
+						"color": "rgbEx(255, 255, 255)"
+					}
+				}
+			],
+			"sid": 571765494908371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 332684926221347,
+					"parameters": {
+						"object": "Rug"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 682510031852049,
+					"parameters": {
+						"instance-variable": "Cold",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 516941132315887,
+					"parameters": {
+						"instance-variable": "Neutral",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 322564383184780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 765701654771056,
+					"parameters": {
+						"object": "Tile"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 637243291082120,
+					"parameters": {
+						"instance-variable": "Cold",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 124616579868258,
+					"parameters": {
+						"instance-variable": "Neutral",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 940181361908983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 230109926219632,
+					"parameters": {
+						"object": "ColdMeterNeutral"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 764069517947065,
+					"parameters": {
+						"instance-variable": "Neutral",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 875992281857084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "placeholderPlayer",
+					"sid": 709036909425964,
+					"parameters": {
+						"instance-variable": "Cold"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "placeholderPlayer",
+					"sid": 269391877787044,
+					"parameters": {
+						"instance-variable": "Neutral"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 622093133211919,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 2,
+						"value": "50"
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "placeholderPlayer",
+					"sid": 186670392694050,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 292844012601720,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"value": "0.1"
+					}
+				}
+			],
+			"sid": 266097600780027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "placeholderPlayer",
+					"sid": 526438588527667,
+					"parameters": {
+						"instance-variable": "Cold"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "placeholderPlayer",
+					"sid": 407872204706219,
+					"parameters": {
+						"instance-variable": "Neutral"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "placeholderPlayer",
+					"sid": 503685054285051,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-jumping",
+					"objectClass": "placeholderPlayer",
+					"sid": 904251138156153,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 819192019222579,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "placeholderPlayer",
+					"sid": 363658491193697,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "placeholderPlayer",
+					"sid": 605873440187036,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"value": "0.1"
+					}
+				}
+			],
+			"sid": 272876400272938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 940106998860827
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "ColdMeterDEBUG",
+					"sid": 890692943884777,
+					"parameters": {
+						"text": "placeholderPlayer.ColdMeter"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "placeholderPlayer",
+					"sid": 670534921559734,
+					"parameters": {
+						"color": "rgbEx(100-placeholderPlayer.ColdMeter*2, 100,100)"
+					}
+				}
+			],
+			"sid": 875119166165588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 533684742838732,
+					"parameters": {
+						"object": "Couch"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "placeholderPlayer",
+					"sid": 704485880651261,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 260626120340026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 645415558005653,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 5,
+						"value": "50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "placeholderPlayer",
+					"sid": 810033205659329,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "placeholderPlayer",
+					"sid": 594638532977336,
+					"parameters": {
+						"color": "rgbEx(0, 255, 255)"
+					}
+				},
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "placeholderPlayer",
+					"sid": 864307000583174,
+					"parameters": {
+						"degrees": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 185805257305673,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "placeholderPlayer",
+					"sid": 262928421204474
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 922346844067987,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 644553761640995
+				}
+			],
+			"sid": 866484469620087
+		}
+	],
 	"sid": 629921702374011
 }

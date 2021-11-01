@@ -1,0 +1,14 @@
+{
+	"name": "ColdMeterNeutral",
+	"plugin-id": "Sprite",
+	"sid": 466395999067598,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Wood",
+		"Chair",
+		"table",
+		"Couch"
+	]
+}
