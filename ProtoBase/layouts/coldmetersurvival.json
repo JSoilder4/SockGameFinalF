@@ -18,7 +18,8 @@
 					"instanceVariables": {
 						"Cold": false,
 						"Neutral": false,
-						"ColdMeter": 0
+						"ColdMeter": 0,
+						"firePowerup": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -388,8 +389,25 @@
 						"live-preview": false
 					},
 					"uid": 12,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"leftright": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 377.9238541871773,
 						"y": 532.9984839317856,

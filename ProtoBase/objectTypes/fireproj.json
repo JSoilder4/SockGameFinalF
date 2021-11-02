@@ -1,21 +1,14 @@
 {
-	"name": "AlienEnemyQuestionMark",
+	"name": "fireProj",
 	"plugin-id": "Sprite",
-	"sid": 161207399108727,
+	"sid": 212309412889757,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "leftright",
-			"type": "boolean",
-			"desc": "",
-			"sid": 694775213338757
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 140936917282475
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 280711825670052
 		}
 	],
 	"effectTypes": [],
@@ -24,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 235,
-						"height": 135,
-						"originX": 0.5191489361702127,
-						"originY": 0.5703703703703704,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9643438,
+						"imageSpriteId": 4817269,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 432557846401787,
+				"sid": 861050018759857,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

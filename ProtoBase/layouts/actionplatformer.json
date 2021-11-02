@@ -18,7 +18,8 @@
 					"instanceVariables": {
 						"Cold": false,
 						"Neutral": false,
-						"ColdMeter": 0
+						"ColdMeter": 0,
+						"firePowerup": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -171,8 +172,25 @@
 						"live-preview": false
 					},
 					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"leftright": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 671,
 						"y": 163,
@@ -201,7 +219,7 @@
 					},
 					"uid": 18,
 					"instanceVariables": {
-						"function": ""
+						"function": "fire"
 					},
 					"behaviors": {},
 					"world": {
@@ -232,7 +250,7 @@
 					},
 					"uid": 19,
 					"instanceVariables": {
-						"function": ""
+						"function": "jump"
 					},
 					"behaviors": {},
 					"world": {
@@ -263,7 +281,7 @@
 					},
 					"uid": 20,
 					"instanceVariables": {
-						"function": ""
+						"function": "speed"
 					},
 					"behaviors": {},
 					"world": {
@@ -273,6 +291,47 @@
 						"height": 27.771903908854178,
 						"originX": 0.480225988700565,
 						"originY": 0.70625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "fireProj",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 14,
+						"y": 520,
+						"width": 13.6746954792623,
+						"height": 13.6746954792623,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

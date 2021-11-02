@@ -21,6 +21,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 516540421013339
+		},
+		{
+			"name": "firePowerup",
+			"type": "boolean",
+			"desc": "",
+			"sid": 382237530604063
 		}
 	],
 	"behaviorTypes": [
