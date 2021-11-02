@@ -1,0 +1,21 @@
+{
+	"name": "Socks",
+	"plugin-id": "Sprite",
+	"sid": 949488198189637,
+	"instanceVariables": [
+		{
+			"name": "function",
+			"type": "string",
+			"desc": "",
+			"sid": 824561509025128
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"SpeedSock",
+		"FireSock",
+		"JumpSock",
+		"Sock"
+	]
+}

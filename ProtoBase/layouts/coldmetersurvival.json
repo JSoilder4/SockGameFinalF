@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "ColdMeterSurvival",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -187,8 +187,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 257,
-						"y": 230,
+						"x": 11.638888888888516,
+						"y": 255.20833333333334,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -297,7 +297,7 @@
 					"world": {
 						"x": 431.9581865035284,
 						"y": 459.7849719673869,
-						"width": 31.759194788303603,
+						"width": 31.7591947883036,
 						"height": 14.153169234305238,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -334,6 +334,277 @@
 						"x": 455.7626388283308,
 						"y": 463.23293820633455,
 						"width": 8.525697663590051,
+						"height": 7.9575700010483095,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpeedSock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"function": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 299.2010077085096,
+						"y": 533.1832456215745,
+						"width": 30.72266869916993,
+						"height": 27.771903908854178,
+						"originX": 0.480225988700565,
+						"originY": 0.70625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AlienEnemyQuestionMark",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 377.9238541871773,
+						"y": 532.9984839317856,
+						"width": 54.40556326368858,
+						"height": 31.254259747225362,
+						"originX": 0.5191489361702127,
+						"originY": 0.5703703703703704,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tile",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 406.699459499783,
+						"y": 193.8650241427949,
+						"width": 264.9792516401898,
+						"height": 7.9575700010483095,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Couch",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 681.700246626968,
+						"y": 455.56559841785105,
+						"width": 67.14309132906867,
+						"height": 20.67609707964168,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"function": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 107.4848107231986,
+						"y": 128.15192498101126,
+						"width": 30.72266869916993,
+						"height": 27.771903908854178,
+						"originX": 0.480225988700565,
+						"originY": 0.70625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Wood",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 140.74305555555475,
+						"y": 192.70833333333297,
+						"width": 264.9792516401898,
+						"height": 7.9575700010483095,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tile",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 409.2202928331164,
+						"y": 71.18446858723918,
+						"width": 264.9792516401898,
+						"height": 7.9575700010483095,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Rug",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 680.458333333334,
+						"y": 70.34722222222166,
+						"width": 264.9792516401898,
 						"height": 7.9575700010483095,
 						"originX": 0.5,
 						"originY": 0.5,

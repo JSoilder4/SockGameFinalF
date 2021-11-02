@@ -1,35 +1,29 @@
 {
-	"name": "Chair",
+	"name": "AlienEnemyQuestionMark",
 	"plugin-id": "Sprite",
-	"sid": 307204875476059,
+	"sid": 161207399108727,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 172504456454753
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 235,
+						"height": 135,
+						"originX": 0.5191489361702127,
+						"originY": 0.5703703703703704,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2934227,
+						"imageSpriteId": 9643438,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 723411324616318,
+				"sid": 432557846401787,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

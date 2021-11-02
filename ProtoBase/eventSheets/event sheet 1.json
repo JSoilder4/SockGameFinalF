@@ -300,12 +300,38 @@
 			],
 			"actions": [
 				{
+					"id": "set-jump-strength",
+					"objectClass": "placeholderPlayer",
+					"sid": 912900231779723,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "placeholderPlayer.Platform.JumpStrength*1.333"
+					}
+				},
+				{
 					"id": "simulate-control",
 					"objectClass": "placeholderPlayer",
 					"sid": 704485880651261,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "jump"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 939664471415535,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "placeholderPlayer",
+					"sid": 947384461293909,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "placeholderPlayer.Platform.JumpStrength/1.333"
 					}
 				}
 			],
@@ -379,6 +405,33 @@
 				}
 			],
 			"sid": 866484469620087
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 518392818296542,
+					"parameters": {
+						"object": "Socks"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 140088898070364
+		},
+		{
+			"functionName": "SockPickup",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 389714929756322
 		}
 	],
 	"sid": 629921702374011

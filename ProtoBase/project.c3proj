@@ -49,7 +49,12 @@
 			"ColdMeterDEBUG",
 			"Couch",
 			"Chair",
-			"table"
+			"table",
+			"SpeedSock",
+			"FireSock",
+			"JumpSock",
+			"AlienEnemyQuestionMark",
+			"Sock"
 		],
 		"subfolders": []
 	},
@@ -57,13 +62,16 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"ColdMeterNeutral"
+			"ColdMeterNeutral",
+			"Socks",
+			"Enemy"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"ColdMeterSurvival",
+			"ActionPlatformer"
 		],
 		"subfolders": []
 	},

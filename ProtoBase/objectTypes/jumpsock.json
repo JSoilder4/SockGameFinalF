@@ -1,35 +1,29 @@
 {
-	"name": "Chair",
+	"name": "JumpSock",
 	"plugin-id": "Sprite",
-	"sid": 307204875476059,
+	"sid": 654918996825793,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 172504456454753
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 177,
+						"height": 160,
+						"originX": 0.480225988700565,
+						"originY": 0.70625,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2934227,
+						"imageSpriteId": 3930264,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 723411324616318,
+				"sid": 857508525803775,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
