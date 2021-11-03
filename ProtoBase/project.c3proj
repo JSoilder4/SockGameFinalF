@@ -40,6 +40,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -72,7 +80,9 @@
 			"AlienEnemyQuestionMark",
 			"Sock",
 			"fireProj",
-			"Keyboard"
+			"Keyboard",
+			"Stairs",
+			"Text"
 		],
 		"subfolders": []
 	},

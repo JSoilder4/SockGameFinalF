@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "ColdMeterMax",
+			"type": "number",
+			"initialValue": "25",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 824037467359145
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -343,11 +353,11 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "placeholderPlayer",
-					"sid": 645415558005653,
+					"sid": 691075561308741,
 					"parameters": {
 						"instance-variable": "ColdMeter",
 						"comparison": 5,
-						"value": "50"
+						"value": "ColdMeterMax"
 					}
 				}
 			],
@@ -427,12 +437,72 @@
 					]
 				},
 				{
-					"id": "destroy",
+					"id": "move-to-layer",
 					"objectClass": "Socks",
-					"sid": 848562412157280
+					"sid": 703694756122526,
+					"parameters": {
+						"layer": "1"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Socks",
+					"sid": 803385715335235,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 954298112476818,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Socks",
+					"sid": 624354017836668,
+					"parameters": {
+						"layer": "0"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Socks",
+					"sid": 200280663622902,
+					"parameters": {
+						"collisions": "enabled"
+					}
 				}
 			],
-			"sid": 140088898070364
+			"sid": 140088898070364,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Socks",
+							"sid": 682816607633479,
+							"parameters": {
+								"instance-variable": "function",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Socks",
+							"sid": 158254537643243
+						}
+					],
+					"sid": 861952329298691
+				}
+			]
 		},
 		{
 			"functionName": "SockPickup",
@@ -455,10 +525,10 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "placeholderPlayer",
-					"sid": 457935412633608,
+					"sid": 344209408150193,
 					"parameters": {
 						"instance-variable": "ColdMeter",
-						"value": "10"
+						"value": "ColdMeterMax * 1/10"
 					}
 				}
 			],
@@ -723,40 +793,86 @@
 				{
 					"id": "is-boolean-instance-variable-set",
 					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 371435824260243,
+					"sid": 261176883612204,
 					"parameters": {
 						"instance-variable": "leftright"
-					}
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "simulate-control",
 					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 113446606085758,
+					"sid": 328321983830097,
 					"behaviorType": "Platform",
 					"parameters": {
-						"control": "right"
+						"control": "left"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 867511314067848,
+					"sid": 573936583992971,
 					"parameters": {
-						"seconds": "3"
+						"seconds": "2"
 					}
 				},
 				{
-					"id": "toggle-boolean-instvar",
+					"id": "set-boolean-instvar",
 					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 560908396118545,
+					"sid": 633302267948140,
 					"parameters": {
-						"instance-variable": "leftright"
+						"instance-variable": "leftright",
+						"value": "true"
 					}
 				}
 			],
-			"sid": 815445421944653
+			"sid": 655516615089455,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 331701996331055,
+							"parameters": {
+								"instance-variable": "leftright"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 335519283257728,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 797173667464972,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 554281993365753,
+							"parameters": {
+								"instance-variable": "leftright",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 674802112542427
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -773,6 +889,7 @@
 					"id": "simulate-control",
 					"objectClass": "AlienEnemyQuestionMark",
 					"sid": 464174211722101,
+					"disabled": true,
 					"behaviorType": "Platform",
 					"parameters": {
 						"control": "right"
@@ -780,6 +897,33 @@
 				}
 			],
 			"sid": 680640375901345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 638099075459134,
+					"parameters": {
+						"object": "AlienEnemyQuestionMark"
+					}
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "placeholderPlayer",
+					"sid": 987035026327364,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "AlienEnemyQuestionMark",
+					"sid": 960571727624495
+				}
+			],
+			"sid": 515583343240376
 		},
 		{
 			"eventType": "block",
@@ -814,6 +958,51 @@
 				}
 			],
 			"sid": 631179170007158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 831788137546859,
+					"parameters": {
+						"object": "Stairs"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 125620087145186,
+					"parameters": {
+						"text": "\"You Win! For now..\""
+					}
+				}
+			],
+			"sid": 140287242184258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 204436580304704,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 822791404742238
+				}
+			],
+			"sid": 770052126932800
 		}
 	],
 	"sid": 629921702374011
