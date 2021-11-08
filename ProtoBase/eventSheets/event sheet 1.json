@@ -17,14 +17,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 463136602569204
+					"sid": 539833008707384
 				}
 			],
 			"actions": [
 				{
 					"id": "set-instvar-value",
 					"objectClass": "placeholderPlayer",
-					"sid": 811708757031560,
+					"sid": 768033722111269,
 					"parameters": {
 						"instance-variable": "ColdMeter",
 						"value": "0"
@@ -33,7 +33,7 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "placeholderPlayer",
-					"sid": 213896199423157,
+					"sid": 473076594932613,
 					"parameters": {
 						"instance-variable": "Cold",
 						"value": "false"
@@ -42,7 +42,7 @@
 				{
 					"id": "set-angle",
 					"objectClass": "placeholderPlayer",
-					"sid": 990634796042135,
+					"sid": 393083482460566,
 					"disabled": true,
 					"parameters": {
 						"angle": "0"
@@ -51,250 +51,892 @@
 				{
 					"id": "set-default-color",
 					"objectClass": "placeholderPlayer",
-					"sid": 822791353592927,
+					"sid": 417768820002579,
 					"parameters": {
 						"color": "rgbEx(255, 255, 255)"
 					}
 				}
 			],
-			"sid": 571765494908371
+			"sid": 527817245123874
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "ColdMeter",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 332684926221347,
-					"parameters": {
-						"object": "Rug"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 682510031852049,
-					"parameters": {
-						"instance-variable": "Cold",
-						"value": "false"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 429393558766996,
+							"parameters": {
+								"object": "Rug"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 939614878516852,
+							"parameters": {
+								"instance-variable": "Cold",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 667554740067107,
+							"parameters": {
+								"instance-variable": "Neutral",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 165516200078157
 				},
 				{
-					"id": "set-boolean-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 516941132315887,
-					"parameters": {
-						"instance-variable": "Neutral",
-						"value": "false"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 439855304647086,
+							"parameters": {
+								"object": "Tile"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 787660148165529,
+							"parameters": {
+								"instance-variable": "Cold",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 608933107002422,
+							"parameters": {
+								"instance-variable": "Neutral",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 830392499455822
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 697771117008754,
+							"parameters": {
+								"object": "ColdMeterNeutral"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 929017289402007,
+							"parameters": {
+								"instance-variable": "Neutral",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 101677728048597
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 985724058449586,
+							"parameters": {
+								"instance-variable": "Cold"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 854772274091714,
+							"parameters": {
+								"instance-variable": "Neutral"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "placeholderPlayer",
+							"sid": 628996426527987,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"comparison": 2,
+								"value": "50"
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "placeholderPlayer",
+							"sid": 917636077592722,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 834531706255637,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 231409397513972
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 770218470599237,
+							"parameters": {
+								"instance-variable": "Cold"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 878646248195948,
+							"parameters": {
+								"instance-variable": "Neutral"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "placeholderPlayer",
+							"sid": 307651670286796,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-jumping",
+							"objectClass": "placeholderPlayer",
+							"sid": 744264417642614,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "placeholderPlayer",
+							"sid": 424958289594428,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "is-falling",
+							"objectClass": "placeholderPlayer",
+							"sid": 531500491571412,
+							"behaviorType": "Platform",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 588967822930081,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 944892086825822
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 373238917682209
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "ColdMeterDEBUG",
+							"sid": 713532190789663,
+							"parameters": {
+								"text": "placeholderPlayer.ColdMeter"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "placeholderPlayer",
+							"sid": 600726904388271,
+							"parameters": {
+								"color": "rgbEx(100-placeholderPlayer.ColdMeter*2, 100,100)"
+							}
+						}
+					],
+					"sid": 416593757207811
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "placeholderPlayer",
+							"sid": 220789348912515,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"comparison": 5,
+								"value": "ColdMeterMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "placeholderPlayer",
+							"sid": 182189403924460,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "placeholderPlayer",
+							"sid": 612971786178916,
+							"parameters": {
+								"color": "rgbEx(0, 255, 255)"
+							}
+						},
+						{
+							"id": "rotate-clockwise",
+							"objectClass": "placeholderPlayer",
+							"sid": 743835158675877,
+							"parameters": {
+								"degrees": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 841117151484621,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "placeholderPlayer",
+							"sid": 379890462633478
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 895684647632440,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 180099450392243
+						}
+					],
+					"sid": 733676937700625
 				}
 			],
-			"sid": 322564383184780
+			"sid": 384280673981832
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Socks",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 765701654771056,
-					"parameters": {
-						"object": "Tile"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 637243291082120,
-					"parameters": {
-						"instance-variable": "Cold",
-						"value": "true"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 485472062110554,
+							"parameters": {
+								"object": "Socks"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SockPickup",
+							"sid": 805461558909676,
+							"parameters": [
+								"Socks.function"
+							]
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Socks",
+							"sid": 584160146791223,
+							"parameters": {
+								"layer": "1"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Socks",
+							"sid": 316522396990723,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 314844720753132,
+							"parameters": {
+								"seconds": "10"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Socks",
+							"sid": 422616750560696,
+							"parameters": {
+								"layer": "0"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Socks",
+							"sid": 303454393359145,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 278999180855018,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Socks",
+									"sid": 460917051220380,
+									"parameters": {
+										"instance-variable": "function",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Socks",
+									"sid": 551278189091816
+								}
+							],
+							"sid": 791216037460396
+						}
+					]
 				},
 				{
-					"id": "set-boolean-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 124616579868258,
-					"parameters": {
-						"instance-variable": "Neutral",
-						"value": "false"
-					}
+					"functionName": "SockPickup",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "function",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 144350293070262
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 757525287068684,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"value": "ColdMeterMax * 1/10"
+							}
+						}
+					],
+					"sid": 201959620683440,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 480572244515593,
+									"parameters": {
+										"first-value": "function",
+										"comparison": 0,
+										"second-value": "\"speed\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-acceleration",
+									"objectClass": "placeholderPlayer",
+									"sid": 268768680439532,
+									"behaviorType": "Platform",
+									"parameters": {
+										"acceleration": "placeholderPlayer.Platform.Acceleration*1.333"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "placeholderPlayer",
+									"sid": 807615617268650,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "placeholderPlayer.Platform.MaxSpeed*1.333"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 205493969152086,
+									"parameters": {
+										"seconds": "2.5"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "placeholderPlayer",
+									"sid": 636313724188510,
+									"behaviorType": "Platform",
+									"parameters": {
+										"acceleration": "placeholderPlayer.Platform.Acceleration/1.333"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "placeholderPlayer",
+									"sid": 716543845997003,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "placeholderPlayer.Platform.MaxSpeed/1.333"
+									}
+								}
+							],
+							"sid": 768913099377527
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 853088961331843,
+									"parameters": {
+										"first-value": "function",
+										"comparison": 0,
+										"second-value": "\"fire\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 499335587527726,
+									"parameters": {
+										"instance-variable": "firePowerup",
+										"value": "true"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 660364666039100,
+									"parameters": {
+										"seconds": "2.5"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 121284055163987,
+									"parameters": {
+										"instance-variable": "firePowerup",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 455344256672263
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 426927681170953,
+									"parameters": {
+										"first-value": "function",
+										"comparison": 0,
+										"second-value": "\"jump\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "placeholderPlayer",
+									"sid": 538502580798709,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "placeholderPlayer.Platform.JumpStrength*1.333"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 681846881374790,
+									"parameters": {
+										"seconds": "2.5"
+									}
+								},
+								{
+									"id": "set-jump-strength",
+									"objectClass": "placeholderPlayer",
+									"sid": 989184710312295,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "placeholderPlayer.Platform.JumpStrength/1.333"
+									}
+								}
+							],
+							"sid": 137939809715055
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 338652435093142,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 572131990729696,
+							"parameters": {
+								"instance-variable": "firePowerup"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 641986248790273,
+							"parameters": {
+								"object": "fireProj",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 401711947277301
 				}
 			],
-			"sid": 940181361908983
+			"sid": 537464722022690
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 230109926219632,
-					"parameters": {
-						"object": "ColdMeterNeutral"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "fireProj",
+							"sid": 420530385605782,
+							"parameters": {
+								"object": "AlienEnemyQuestionMark"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 207014832007652
+						},
+						{
+							"id": "destroy",
+							"objectClass": "fireProj",
+							"sid": 703162772037770
+						}
+					],
+					"sid": 471979451435400
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 839196773525949
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 175103172036442,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 841689685063593,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 547464321750680,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 804358265169713,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 596267798235003,
+							"parameters": {
+								"instance-variable": "leftright"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 695274364518340,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 971969583338115,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 879532164232017,
+							"parameters": {
+								"instance-variable": "leftright",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 808468099244149,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "AlienEnemyQuestionMark",
+									"sid": 747134946823624,
+									"parameters": {
+										"instance-variable": "leftright"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "AlienEnemyQuestionMark",
+									"sid": 863046687571932,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "right"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 491396155519129,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "AlienEnemyQuestionMark",
+									"sid": 682899384994580,
+									"parameters": {
+										"instance-variable": "leftright",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 608773595724769
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 734439433401788,
+							"disabled": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 157957656386303,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 263272539928254
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 327934119954025,
+							"parameters": {
+								"object": "AlienEnemyQuestionMark"
+							}
+						},
+						{
+							"id": "is-falling",
+							"objectClass": "placeholderPlayer",
+							"sid": 680906723827953,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 578408847424812
+						}
+					],
+					"sid": 931088737317288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AlienEnemyQuestionMark",
+							"sid": 340942149154764,
+							"parameters": {
+								"object": "placeholderPlayer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "placeholderPlayer",
+							"sid": 292701936183871
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 758097804318189,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 160801222406854
+						}
+					],
+					"sid": 226579416569446
 				}
 			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 764069517947065,
-					"parameters": {
-						"instance-variable": "Neutral",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 875992281857084
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "placeholderPlayer",
-					"sid": 709036909425964,
-					"parameters": {
-						"instance-variable": "Cold"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "placeholderPlayer",
-					"sid": 269391877787044,
-					"parameters": {
-						"instance-variable": "Neutral"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 622093133211919,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 2,
-						"value": "50"
-					}
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "placeholderPlayer",
-					"sid": 186670392694050,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "add-to-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 292844012601720,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"value": "0.1"
-					}
-				}
-			],
-			"sid": 266097600780027
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "placeholderPlayer",
-					"sid": 526438588527667,
-					"parameters": {
-						"instance-variable": "Cold"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "placeholderPlayer",
-					"sid": 407872204706219,
-					"parameters": {
-						"instance-variable": "Neutral"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-moving",
-					"objectClass": "placeholderPlayer",
-					"sid": 503685054285051,
-					"behaviorType": "Platform"
-				},
-				{
-					"id": "is-jumping",
-					"objectClass": "placeholderPlayer",
-					"sid": 904251138156153,
-					"behaviorType": "Platform",
-					"isInverted": true
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 819192019222579,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 4,
-						"value": "0"
-					}
-				},
-				{
-					"id": "is-falling",
-					"objectClass": "placeholderPlayer",
-					"sid": 363658491193697,
-					"behaviorType": "Platform",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 605873440187036,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"value": "0.1"
-					}
-				}
-			],
-			"sid": 272876400272938
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 940106998860827
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "ColdMeterDEBUG",
-					"sid": 890692943884777,
-					"parameters": {
-						"text": "placeholderPlayer.ColdMeter"
-					}
-				},
-				{
-					"id": "set-default-color",
-					"objectClass": "placeholderPlayer",
-					"sid": 670534921559734,
-					"parameters": {
-						"color": "rgbEx(100-placeholderPlayer.ColdMeter*2, 100,100)"
-					}
-				}
-			],
-			"sid": 875119166165588
+			"sid": 357791172501072
 		},
 		{
 			"eventType": "block",
@@ -346,618 +988,6 @@
 				}
 			],
 			"sid": 260626120340026
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 691075561308741,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 5,
-						"value": "ColdMeterMax"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "placeholderPlayer",
-					"sid": 810033205659329,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-default-color",
-					"objectClass": "placeholderPlayer",
-					"sid": 594638532977336,
-					"parameters": {
-						"color": "rgbEx(0, 255, 255)"
-					}
-				},
-				{
-					"id": "rotate-clockwise",
-					"objectClass": "placeholderPlayer",
-					"sid": 864307000583174,
-					"parameters": {
-						"degrees": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 185805257305673,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "placeholderPlayer",
-					"sid": 262928421204474
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 922346844067987,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 644553761640995
-				}
-			],
-			"sid": 866484469620087
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 518392818296542,
-					"parameters": {
-						"object": "Socks"
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "SockPickup",
-					"sid": 351965283813464,
-					"parameters": [
-						"Socks.function"
-					]
-				},
-				{
-					"id": "move-to-layer",
-					"objectClass": "Socks",
-					"sid": 703694756122526,
-					"parameters": {
-						"layer": "1"
-					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "Socks",
-					"sid": 803385715335235,
-					"parameters": {
-						"collisions": "disabled"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 954298112476818,
-					"parameters": {
-						"seconds": "10"
-					}
-				},
-				{
-					"id": "move-to-layer",
-					"objectClass": "Socks",
-					"sid": 624354017836668,
-					"parameters": {
-						"layer": "0"
-					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "Socks",
-					"sid": 200280663622902,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				}
-			],
-			"sid": 140088898070364,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Socks",
-							"sid": 682816607633479,
-							"parameters": {
-								"instance-variable": "function",
-								"comparison": 0,
-								"value": "\"\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "Socks",
-							"sid": 158254537643243
-						}
-					],
-					"sid": 861952329298691
-				}
-			]
-		},
-		{
-			"functionName": "SockPickup",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "function",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"sid": 144350293070262
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "placeholderPlayer",
-					"sid": 344209408150193,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"value": "ColdMeterMax * 1/10"
-					}
-				}
-			],
-			"sid": 389714929756322,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 508504010347547,
-							"parameters": {
-								"first-value": "function",
-								"comparison": 0,
-								"second-value": "\"speed\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-acceleration",
-							"objectClass": "placeholderPlayer",
-							"sid": 356179757842013,
-							"behaviorType": "Platform",
-							"parameters": {
-								"acceleration": "placeholderPlayer.Platform.Acceleration*1.333"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "placeholderPlayer",
-							"sid": 607837010971891,
-							"behaviorType": "Platform",
-							"parameters": {
-								"max-speed": "placeholderPlayer.Platform.MaxSpeed*1.333"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 225163958419429,
-							"parameters": {
-								"seconds": "2.5"
-							}
-						},
-						{
-							"id": "set-acceleration",
-							"objectClass": "placeholderPlayer",
-							"sid": 439148706711379,
-							"behaviorType": "Platform",
-							"parameters": {
-								"acceleration": "placeholderPlayer.Platform.Acceleration/1.333"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "placeholderPlayer",
-							"sid": 849211041181746,
-							"behaviorType": "Platform",
-							"parameters": {
-								"max-speed": "placeholderPlayer.Platform.MaxSpeed/1.333"
-							}
-						}
-					],
-					"sid": 116499044221305
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 350745204397900,
-							"parameters": {
-								"first-value": "function",
-								"comparison": 0,
-								"second-value": "\"fire\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "placeholderPlayer",
-							"sid": 708557716579548,
-							"parameters": {
-								"instance-variable": "firePowerup",
-								"value": "true"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 163204006987953,
-							"parameters": {
-								"seconds": "2.5"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "placeholderPlayer",
-							"sid": 150365197757589,
-							"parameters": {
-								"instance-variable": "firePowerup",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 459166567897323
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 468956343657725,
-							"parameters": {
-								"first-value": "function",
-								"comparison": 0,
-								"second-value": "\"jump\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-jump-strength",
-							"objectClass": "placeholderPlayer",
-							"sid": 637456396945561,
-							"behaviorType": "Platform",
-							"parameters": {
-								"jump-strength": "placeholderPlayer.Platform.JumpStrength*1.333"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 566297676212586,
-							"parameters": {
-								"seconds": "2.5"
-							}
-						},
-						{
-							"id": "set-jump-strength",
-							"objectClass": "placeholderPlayer",
-							"sid": 174809646152111,
-							"behaviorType": "Platform",
-							"parameters": {
-								"jump-strength": "placeholderPlayer.Platform.JumpStrength/1.333"
-							}
-						}
-					],
-					"sid": 719061055883786
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 670255237351028,
-					"parameters": {
-						"key": 32
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "placeholderPlayer",
-					"sid": 124012886015101,
-					"parameters": {
-						"instance-variable": "firePowerup"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 768404720189942,
-					"parameters": {
-						"object": "fireProj",
-						"layer": "0",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				}
-			],
-			"sid": 781347637012221
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "fireProj",
-					"sid": 941082442710440,
-					"parameters": {
-						"object": "AlienEnemyQuestionMark"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 859812100199268
-				},
-				{
-					"id": "destroy",
-					"objectClass": "fireProj",
-					"sid": 634384164303817
-				}
-			],
-			"sid": 957381520260684
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 920134740825191
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 314974080678300,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "left"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 552263521947420,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "simulate-control",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 288775267313523,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "right"
-					}
-				}
-			],
-			"sid": 195657535208749,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 261176883612204,
-					"parameters": {
-						"instance-variable": "leftright"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 328321983830097,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "left"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 573936583992971,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 633302267948140,
-					"parameters": {
-						"instance-variable": "leftright",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 655516615089455,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "AlienEnemyQuestionMark",
-							"sid": 331701996331055,
-							"parameters": {
-								"instance-variable": "leftright"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "AlienEnemyQuestionMark",
-							"sid": 335519283257728,
-							"behaviorType": "Platform",
-							"parameters": {
-								"control": "right"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 797173667464972,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "AlienEnemyQuestionMark",
-							"sid": 554281993365753,
-							"parameters": {
-								"instance-variable": "leftright",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 674802112542427
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 251843885216326,
-					"disabled": true
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 464174211722101,
-					"disabled": true,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "right"
-					}
-				}
-			],
-			"sid": 680640375901345
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "placeholderPlayer",
-					"sid": 638099075459134,
-					"parameters": {
-						"object": "AlienEnemyQuestionMark"
-					}
-				},
-				{
-					"id": "is-falling",
-					"objectClass": "placeholderPlayer",
-					"sid": 987035026327364,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 960571727624495
-				}
-			],
-			"sid": 515583343240376
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "AlienEnemyQuestionMark",
-					"sid": 510561688503690,
-					"parameters": {
-						"object": "placeholderPlayer"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "placeholderPlayer",
-					"sid": 513268035277509
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 984205341394847,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 967226144121879
-				}
-			],
-			"sid": 631179170007158
 		},
 		{
 			"eventType": "block",
