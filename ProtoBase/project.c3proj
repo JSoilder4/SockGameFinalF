@@ -61,6 +61,14 @@
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r268",
+			"bundled": false
 		}
 	],
 	"uniqueId": "xjodb21ffto",
@@ -82,7 +90,8 @@
 			"fireProj",
 			"Keyboard",
 			"Stairs",
-			"Text"
+			"Text",
+			"coldwater"
 		],
 		"subfolders": []
 	},

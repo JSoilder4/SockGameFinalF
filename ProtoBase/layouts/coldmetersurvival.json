@@ -43,8 +43,8 @@
 						}
 					},
 					"world": {
-						"x": 111,
-						"y": 801,
+						"x": 57.062505924448544,
+						"y": 282.84636838896495,
 						"width": 67.83804242458652,
 						"height": 67.83804242458652,
 						"originX": 0.5,
@@ -330,14 +330,14 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 403,
-						"y": 854,
+						"x": 1415.616746753622,
+						"y": 798.3678332105684,
 						"width": 54.40556326368858,
 						"height": 31.254259747225362,
 						"originX": 0.5191489361702127,
@@ -1123,14 +1123,14 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 577,
-						"y": 856,
+						"x": 1095.153631611035,
+						"y": 694.1875177733457,
 						"width": 54.40556326368858,
 						"height": 31.254259747225362,
 						"originX": 0.5191489361702127,
@@ -2065,6 +2065,50 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "coldwater",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 70,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Water": {
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 2,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": -132.9686569877375,
+						"y": 352.9000113266783,
+						"width": 250,
+						"height": 233.23276386264044,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.27855035343922,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 183245632277180,
@@ -2097,44 +2141,7 @@
 		{
 			"name": "Layer 1",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "Rug",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 490,
-						"y": 760,
-						"width": 264.9792516401898,
-						"height": 41.95757000104831,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 959685919720831,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
