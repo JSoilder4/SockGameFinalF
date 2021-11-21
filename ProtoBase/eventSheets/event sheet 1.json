@@ -299,9 +299,61 @@
 							"parameters": {
 								"color": "rgbEx(100-placeholderPlayer.ColdMeter*2, 100,100)"
 							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "ColdMeterVisual",
+							"sid": 452553493660139,
+							"parameters": {
+								"color": "rgbEx(40, 40, 100)"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "ColdMeterVisual",
+							"sid": 979731866860955,
+							"parameters": {
+								"height": "(placeholderPlayer.ColdMeter*5)"
+							}
 						}
 					],
-					"sid": 416593757207811
+					"sid": 416593757207811,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "placeholderPlayer",
+									"sid": 894733763663832,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"comparison": 2,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "ColdMeterVisual",
+									"sid": 415470324113883,
+									"parameters": {
+										"color": "rgbEx(100, 40, 40)"
+									}
+								},
+								{
+									"id": "set-height",
+									"objectClass": "ColdMeterVisual",
+									"sid": 223379655672670,
+									"parameters": {
+										"height": "-placeholderPlayer.ColdMeter*5"
+									}
+								}
+							],
+							"sid": 325834662839235
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -330,9 +382,9 @@
 						{
 							"id": "set-default-color",
 							"objectClass": "placeholderPlayer",
-							"sid": 612971786178916,
+							"sid": 242848945084091,
 							"parameters": {
-								"color": "rgbEx(0, 255, 255)"
+								"color": "rgbEx(0, 100, 100)"
 							}
 						},
 						{
@@ -371,6 +423,75 @@
 						}
 					],
 					"sid": 733676937700625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "placeholderPlayer",
+							"sid": 585350076006183,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"comparison": 3,
+								"value": "-ColdMeterMax"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "placeholderPlayer",
+							"sid": 137670458161628,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "placeholderPlayer",
+							"sid": 939002053632897,
+							"parameters": {
+								"color": "rgbEx(100, 0, 0)"
+							}
+						},
+						{
+							"id": "rotate-clockwise",
+							"objectClass": "placeholderPlayer",
+							"sid": 703561203138332,
+							"parameters": {
+								"degrees": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 378440278397595,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "placeholderPlayer",
+							"sid": 321051061107893
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 108852152137304,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 472717452700997
+						}
+					],
+					"sid": 576438059405161
 				}
 			],
 			"sid": 384280673981832
