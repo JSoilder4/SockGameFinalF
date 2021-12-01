@@ -92,7 +92,7 @@
 			"table",
 			"SpeedSock",
 			"FireSock",
-			"JumpSock",
+			"inversionSock",
 			"AlienEnemyQuestionMark",
 			"Sock",
 			"fireProj",
@@ -101,8 +101,10 @@
 			"Text",
 			"coldwater",
 			"ColdMeterVisual",
+			"Sprite",
+			"Chair_",
 			"Tilemap",
-			"Sprite"
+			"Tilemap2"
 		],
 		"subfolders": []
 	},
@@ -234,9 +236,9 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-scale",
+		"fullscreenMode": "letterbox-integer-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -263,7 +265,7 @@
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
@@ -275,5 +277,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "ColdMeterSurvival"
 }

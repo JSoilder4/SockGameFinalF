@@ -9,7 +9,7 @@
 					"type": "placeholderPlayer",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -45,10 +45,10 @@
 					"world": {
 						"x": 60,
 						"y": 411,
-						"width": 67.83804242458652,
-						"height": 67.83804242458652,
+						"width": 2.1708173575867686,
+						"height": 3.798930375776845,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.42857142857142855,
 						"color": [
 							1,
 							1,
@@ -245,7 +245,7 @@
 					}
 				},
 				{
-					"type": "JumpSock",
+					"type": "inversionSock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

@@ -15,7 +15,7 @@
 	"members": [
 		"SpeedSock",
 		"FireSock",
-		"JumpSock",
+		"inversionSock",
 		"Sock"
 	]
 }

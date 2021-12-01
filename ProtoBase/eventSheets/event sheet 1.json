@@ -378,51 +378,59 @@
 							"parameters": {
 								"state": "disabled"
 							}
-						},
-						{
-							"id": "set-default-color",
-							"objectClass": "placeholderPlayer",
-							"sid": 242848945084091,
-							"parameters": {
-								"color": "rgbEx(0, 100, 100)"
-							}
-						},
-						{
-							"id": "rotate-clockwise",
-							"objectClass": "placeholderPlayer",
-							"sid": 743835158675877,
-							"parameters": {
-								"degrees": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 841117151484621,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "placeholderPlayer",
-							"sid": 379890462633478
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 895684647632440,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 180099450392243
 						}
 					],
-					"sid": 733676937700625
+					"sid": 733676937700625,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 678492422619178
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "placeholderPlayer",
+									"sid": 202059362039760,
+									"parameters": {
+										"animation": "\"iceDie\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 960300044158223,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "placeholderPlayer",
+									"sid": 814699249161150
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 878971627992661,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 620806772271810
+								}
+							],
+							"sid": 676753050995945
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -710,9 +718,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 660364666039100,
+									"sid": 886223798609006,
 									"parameters": {
-										"seconds": "2.5"
+										"seconds": "5"
 									}
 								},
 								{
@@ -733,39 +741,31 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 426927681170953,
+									"sid": 247168177094919,
 									"parameters": {
 										"first-value": "function",
 										"comparison": 0,
-										"second-value": "\"jump\""
+										"second-value": "\"inversion\""
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "set-jump-strength",
+									"id": "add-to-instvar",
 									"objectClass": "placeholderPlayer",
-									"sid": 538502580798709,
-									"behaviorType": "Platform",
+									"sid": 438799530706750,
 									"parameters": {
-										"jump-strength": "placeholderPlayer.Platform.JumpStrength*1.333"
+										"instance-variable": "ColdMeter",
+										"value": "ColdMeterMax/10"
 									}
 								},
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 681846881374790,
-									"parameters": {
-										"seconds": "2.5"
-									}
-								},
-								{
-									"id": "set-jump-strength",
+									"id": "set-instvar-value",
 									"objectClass": "placeholderPlayer",
-									"sid": 989184710312295,
-									"behaviorType": "Platform",
+									"sid": 235663531214186,
 									"parameters": {
-										"jump-strength": "placeholderPlayer.Platform.JumpStrength/1.333"
+										"instance-variable": "ColdMeter",
+										"value": "-placeholderPlayer.ColdMeter"
 									}
 								}
 							],
@@ -777,17 +777,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 338652435093142,
-							"parameters": {
-								"key": 32
-							}
-						},
-						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "placeholderPlayer",
-							"sid": 572131990729696,
+							"sid": 801734007975201,
 							"parameters": {
 								"instance-variable": "firePowerup"
 							}
@@ -795,18 +787,64 @@
 					],
 					"actions": [
 						{
-							"id": "spawn-another-object",
+							"id": "subtract-from-instvar",
 							"objectClass": "placeholderPlayer",
-							"sid": 641986248790273,
+							"sid": 632628572338794,
 							"parameters": {
-								"object": "fireProj",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
+								"instance-variable": "ColdMeter",
+								"value": "0.05"
 							}
 						}
 					],
-					"sid": 401711947277301
+					"sid": 601651021444782,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 898059533971940,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "placeholderPlayer",
+									"sid": 683792603808832,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"comparison": 2,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "placeholderPlayer",
+									"sid": 416934065518438,
+									"parameters": {
+										"object": "fireProj",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 370280572146629,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 388898856909398
+						}
+					]
 				}
 			],
 			"sid": 537464722022690
@@ -1154,6 +1192,144 @@
 				}
 			],
 			"sid": 770052126932800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "placeholderPlayer",
+					"sid": 195805031079048,
+					"parameters": {
+						"object": "Tilemap2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 666602373281303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "placeholderPlayer",
+					"sid": 337529041196605,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "placeholderPlayer",
+					"sid": 137985588736383,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 737691117149412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "placeholderPlayer",
+					"sid": 738473461801655,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 212769419906945,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 3,
+						"value": "ColdMeterMax"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "placeholderPlayer",
+					"sid": 278446457836821,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 295148170709620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 246173517042893,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 932429904166894,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "placeholderPlayer",
+					"sid": 659084558423444,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 578022522611098,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 903473183662329,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 709341907668237,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "placeholderPlayer",
+					"sid": 336915864646790,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 761963020948767,
+			"isOrBlock": true
 		}
 	],
 	"sid": 629921702374011
