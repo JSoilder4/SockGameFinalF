@@ -169,45 +169,95 @@
 							"parameters": {
 								"instance-variable": "Cold"
 							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "placeholderPlayer",
-							"sid": 854772274091714,
-							"parameters": {
-								"instance-variable": "Neutral"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "placeholderPlayer",
-							"sid": 628996426527987,
-							"parameters": {
-								"instance-variable": "ColdMeter",
-								"comparison": 2,
-								"value": "50"
-							}
-						},
-						{
-							"id": "is-on-floor",
-							"objectClass": "placeholderPlayer",
-							"sid": 917636077592722,
-							"behaviorType": "Platform"
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 231409397513972,
+					"children": [
 						{
-							"id": "add-to-instvar",
-							"objectClass": "placeholderPlayer",
-							"sid": 834531706255637,
-							"parameters": {
-								"instance-variable": "ColdMeter",
-								"value": "0.1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "placeholderPlayer",
+									"sid": 629617723354189,
+									"parameters": {
+										"instance-variable": "Neutral"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "placeholderPlayer",
+									"sid": 940895110813515,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"comparison": 2,
+										"value": "ColdMeterMax"
+									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "placeholderPlayer",
+									"sid": 942769231442264,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 481490168551396,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"value": "0.1"
+									}
+								}
+							],
+							"sid": 522185551268456
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 889362062874719
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "placeholderPlayer",
+									"sid": 434756611016959,
+									"parameters": {
+										"instance-variable": "Neutral"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "placeholderPlayer",
+									"sid": 746916889722757,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"comparison": 2,
+										"value": "ColdMeterMax"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 205334430004625,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"value": "0.05"
+									}
+								}
+							],
+							"sid": 128359779545504
 						}
-					],
-					"sid": 231409397513972
+					]
 				},
 				{
 					"eventType": "block",
@@ -1216,6 +1266,28 @@
 					"objectClass": "placeholderPlayer",
 					"sid": 337529041196605,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 430999168321331,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 3,
+						"value": "-ColdMeterMax"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 935053775028164,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 5,
+						"value": "ColdMeterMax"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [

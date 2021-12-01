@@ -7,14 +7,14 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 30,
-		"height": 10,
+		"width": 48,
+		"height": 16,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9983004,
+		"imageSpriteId": 1980508,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}
