@@ -161,6 +161,26 @@
 					"name": "Freeze1.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 585258748872235
+				},
+				{
+					"name": "Jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 316938767530655
+				},
+				{
+					"name": "GetPowerup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 812547667277723
+				},
+				{
+					"name": "CouchBounce.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 906994976024576
+				},
+				{
+					"name": "CouchBounce_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 356869113392900
 				}
 			],
 			"subfolders": []

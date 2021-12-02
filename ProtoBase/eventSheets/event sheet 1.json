@@ -1207,7 +1207,47 @@
 					}
 				}
 			],
-			"sid": 260626120340026
+			"sid": 260626120340026,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "placeholderPlayer",
+							"sid": 241045382634611,
+							"behaviorType": "Platform",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 946499079580378,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "CouchBounce",
+								"loop": "not-looping",
+								"volume": "-15",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 731026093465459,
+							"parameters": {
+								"audio-file": "CouchBounce_2",
+								"loop": "not-looping",
+								"volume": "-15",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 193547233145249
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1385,17 +1425,17 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 903473183662329,
+					"sid": 963977630485031,
 					"parameters": {
 						"key": 39
 					}
 				},
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 709341907668237,
+					"sid": 886229097757677,
 					"parameters": {
 						"key": 68
 					}
@@ -1413,6 +1453,57 @@
 			],
 			"sid": 761963020948767,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "placeholderPlayer",
+					"sid": 612394554451839,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 516032979766722,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 873135137006221,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 631718280289671,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 804648563659794,
+							"parameters": {
+								"audio-file": "Jump",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 333044530886718,
+					"isOrBlock": true
+				}
+			]
 		}
 	],
 	"sid": 629921702374011
