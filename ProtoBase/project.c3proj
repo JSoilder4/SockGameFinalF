@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -104,7 +112,8 @@
 			"Sprite",
 			"Chair_",
 			"Tilemap",
-			"Tilemap2"
+			"Tilemap2",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -137,7 +146,23 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Freeze4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 222199005493239
+				},
+				{
+					"name": "Freeze5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 363635001533229
+				},
+				{
+					"name": "Freeze1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 585258748872235
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
