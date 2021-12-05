@@ -1,0 +1,11 @@
+{
+	"name": "WoodTileMap",
+	"plugin-id": "Tilemap",
+	"sid": 485750273109413,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"WoodTileMapLayout1"
+	]
+}

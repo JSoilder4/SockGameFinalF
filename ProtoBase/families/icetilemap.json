@@ -1,0 +1,11 @@
+{
+	"name": "IceTileMap",
+	"plugin-id": "Tilemap",
+	"sid": 913523794395999,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"IceTileMapLayout1"
+	]
+}

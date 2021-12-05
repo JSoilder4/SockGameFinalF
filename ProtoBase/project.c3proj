@@ -77,14 +77,6 @@
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "water",
-			"name": "Water",
-			"author": "Viktor Korsun",
-			"version": "r268",
-			"bundled": false
 		}
 	],
 	"uniqueId": "xjodb21ffto",
@@ -103,7 +95,6 @@
 			"Keyboard",
 			"Stairs",
 			"winTextTemp",
-			"coldwater",
 			"ColdMeterVisual",
 			"Sprite",
 			"RugTileMapLayout1",
@@ -121,14 +112,16 @@
 		"items": [
 			"ColdMeterNeutral",
 			"Socks",
-			"Enemy"
+			"Enemy",
+			"IceTileMap",
+			"RugTileMap",
+			"WoodTileMap"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"ColdMeterSurvival",
-			"ActionPlatformer"
+			"ColdMeterSurvival"
 		],
 		"subfolders": []
 	},

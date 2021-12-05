@@ -1,0 +1,11 @@
+{
+	"name": "RugTileMap",
+	"plugin-id": "Tilemap",
+	"sid": 158739903286238,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"RugTileMapLayout1"
+	]
+}

@@ -72,9 +72,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "placeholderPlayer",
-							"sid": 729347348156516,
+							"sid": 383856265344721,
 							"parameters": {
-								"object": "RugTileMapLayout1"
+								"object": "RugTileMap"
 							}
 						}
 					],
@@ -106,9 +106,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "placeholderPlayer",
-							"sid": 220207814455072,
+							"sid": 108504826243683,
 							"parameters": {
-								"object": "IceTileMapLayout1"
+								"object": "IceTileMap"
 							}
 						}
 					],
@@ -165,9 +165,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "placeholderPlayer",
-							"sid": 919701087326585,
+							"sid": 744169090705723,
 							"parameters": {
-								"object": "WoodTileMapLayout1"
+								"object": "WoodTileMap"
 							}
 						}
 					],
