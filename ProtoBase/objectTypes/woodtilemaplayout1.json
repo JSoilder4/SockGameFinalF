@@ -1,20 +1,26 @@
 {
-	"name": "Tilemap",
+	"name": "WoodTileMapLayout1",
 	"plugin-id": "Tilemap",
-	"sid": 874273875877091,
+	"sid": 394615917022983,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 800167786903610
+		}
+	],
 	"effectTypes": [],
 	"image": {
-		"width": 352,
-		"height": 224,
+		"width": 48,
+		"height": 16,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 2195936,
+		"imageSpriteId": 8847243,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

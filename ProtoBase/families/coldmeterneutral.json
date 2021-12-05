@@ -6,9 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Wood",
 		"Chair",
-		"table",
 		"Couch",
 		"Stairs"
 	]

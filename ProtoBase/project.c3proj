@@ -91,13 +91,9 @@
 	"objectTypes": {
 		"items": [
 			"placeholderPlayer",
-			"Rug",
-			"Tile",
-			"Wood",
 			"ColdMeterDEBUG",
 			"Couch",
 			"Chair",
-			"table",
 			"SpeedSock",
 			"FireSock",
 			"inversionSock",
@@ -106,14 +102,15 @@
 			"fireProj",
 			"Keyboard",
 			"Stairs",
-			"Text",
+			"winTextTemp",
 			"coldwater",
 			"ColdMeterVisual",
 			"Sprite",
-			"Chair_",
-			"Tilemap",
-			"Tilemap2",
-			"Audio"
+			"RugTileMapLayout1",
+			"Audio",
+			"Table_",
+			"IceTileMapLayout1",
+			"WoodTileMapLayout1"
 		],
 		"subfolders": []
 	},

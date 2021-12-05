@@ -72,9 +72,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "placeholderPlayer",
-							"sid": 429393558766996,
+							"sid": 729347348156516,
 							"parameters": {
-								"object": "Rug"
+								"object": "RugTileMapLayout1"
 							}
 						}
 					],
@@ -106,9 +106,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "placeholderPlayer",
-							"sid": 439855304647086,
+							"sid": 220207814455072,
 							"parameters": {
-								"object": "Tile"
+								"object": "IceTileMapLayout1"
 							}
 						}
 					],
@@ -158,6 +158,31 @@
 						}
 					],
 					"sid": 101677728048597
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "placeholderPlayer",
+							"sid": 919701087326585,
+							"parameters": {
+								"object": "WoodTileMapLayout1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 774819879032368,
+							"parameters": {
+								"instance-variable": "Neutral",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 604751493135143
 				},
 				{
 					"eventType": "block",
@@ -1264,7 +1289,7 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "Text",
+					"objectClass": "winTextTemp",
 					"sid": 125620087145186,
 					"parameters": {
 						"text": "\"You Win! For now..\""
@@ -1302,7 +1327,7 @@
 					"objectClass": "placeholderPlayer",
 					"sid": 195805031079048,
 					"parameters": {
-						"object": "Tilemap2"
+						"object": "RugTileMapLayout1"
 					}
 				}
 			],
@@ -1462,6 +1487,28 @@
 					"objectClass": "placeholderPlayer",
 					"sid": 612394554451839,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 985552509360469,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 3,
+						"value": "-ColdMeterMax"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 897475463568405,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 5,
+						"value": "ColdMeterMax"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
