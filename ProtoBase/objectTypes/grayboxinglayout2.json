@@ -1,0 +1,27 @@
+{
+	"name": "GrayboxingLayout2",
+	"plugin-id": "Tilemap",
+	"sid": 493471778277052,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 311537622687212
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6142271,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

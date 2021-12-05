@@ -102,7 +102,8 @@
 			"Table_",
 			"IceTileMapLayout1",
 			"WoodTileMapLayout1",
-			"outofboundsStopper"
+			"outofboundsStopper",
+			"GrayboxingLayout2"
 		],
 		"subfolders": []
 	},
@@ -121,7 +122,8 @@
 	},
 	"layouts": {
 		"items": [
-			"ColdMeterSurvival"
+			"Level 1",
+			"Level 2"
 		],
 		"subfolders": []
 	},
@@ -313,5 +315,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "ColdMeterSurvival"
+	"firstLayout": "Level 1"
 }
