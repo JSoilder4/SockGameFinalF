@@ -110,7 +110,8 @@
 			"Audio",
 			"Table_",
 			"IceTileMapLayout1",
-			"WoodTileMapLayout1"
+			"WoodTileMapLayout1",
+			"outofboundsStopper"
 		],
 		"subfolders": []
 	},
