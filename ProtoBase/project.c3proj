@@ -103,7 +103,8 @@
 			"IceTileMapLayout1",
 			"WoodTileMapLayout1",
 			"outofboundsStopper",
-			"GrayboxingLayout2"
+			"GrayboxingLayout2",
+			"GrayboxingLayout3"
 		],
 		"subfolders": []
 	},
@@ -123,7 +124,8 @@
 	"layouts": {
 		"items": [
 			"Level 1",
-			"Level 2"
+			"Level 2",
+			"Level 3"
 		],
 		"subfolders": []
 	},
