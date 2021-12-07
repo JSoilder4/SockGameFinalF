@@ -55,6 +55,30 @@
 					"parameters": {
 						"color": "rgbEx(255, 255, 255)"
 					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "placeholderPlayer",
+					"sid": 713881884027261,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "playerfeetbox",
+					"sid": 496811302411383,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "placeholderPlayer",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
 				}
 			],
 			"sid": 527817245123874
@@ -71,8 +95,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "placeholderPlayer",
-							"sid": 383856265344721,
+							"objectClass": "playerfeetbox",
+							"sid": 551919115041934,
 							"parameters": {
 								"object": "RugTileMap"
 							}
@@ -105,8 +129,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "placeholderPlayer",
-							"sid": 108504826243683,
+							"objectClass": "playerfeetbox",
+							"sid": 326587358595387,
 							"parameters": {
 								"object": "IceTileMap"
 							}
@@ -139,8 +163,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "placeholderPlayer",
-							"sid": 697771117008754,
+							"objectClass": "playerfeetbox",
+							"sid": 808039908012234,
 							"parameters": {
 								"object": "ColdMeterNeutral"
 							}
@@ -164,8 +188,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "placeholderPlayer",
-							"sid": 744169090705723,
+							"objectClass": "playerfeetbox",
+							"sid": 165096810825497,
 							"parameters": {
 								"object": "WoodTileMap"
 							}
@@ -446,12 +470,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
+							"id": "set-ignoring-input",
 							"objectClass": "placeholderPlayer",
-							"sid": 182189403924460,
+							"sid": 977590270661168,
 							"behaviorType": "Platform",
 							"parameters": {
-								"state": "disabled"
+								"input": "start-ignoring"
 							}
 						}
 					],
@@ -534,58 +558,77 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
+							"id": "set-ignoring-input",
 							"objectClass": "placeholderPlayer",
-							"sid": 137670458161628,
+							"sid": 698814701261152,
 							"behaviorType": "Platform",
 							"parameters": {
-								"state": "disabled"
+								"input": "start-ignoring"
 							}
-						},
-						{
-							"id": "set-default-color",
-							"objectClass": "placeholderPlayer",
-							"sid": 939002053632897,
-							"parameters": {
-								"color": "rgbEx(100, 0, 0)"
-							}
-						},
-						{
-							"id": "rotate-clockwise",
-							"objectClass": "placeholderPlayer",
-							"sid": 703561203138332,
-							"parameters": {
-								"degrees": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 378440278397595,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "placeholderPlayer",
-							"sid": 321051061107893
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 108852152137304,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 472717452700997
 						}
 					],
-					"sid": 576438059405161
+					"sid": 576438059405161,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 342683957470108
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "placeholderPlayer",
+									"sid": 252711568264056,
+									"parameters": {
+										"animation": "\"fireDie\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 553561620363063,
+									"parameters": {
+										"audio-file": "Freeze5",
+										"loop": "not-looping",
+										"volume": "-15",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 988969039353394,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "placeholderPlayer",
+									"sid": 685656163627850
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 761763661318813,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 127472906926095
+								}
+							],
+							"sid": 963872150439286
+						}
+					]
 				}
 			],
 			"sid": 384280673981832
@@ -620,9 +663,9 @@
 						{
 							"id": "move-to-layer",
 							"objectClass": "Socks",
-							"sid": 584160146791223,
+							"sid": 745328109551083,
 							"parameters": {
-								"layer": "1"
+								"layer": "4"
 							}
 						},
 						{
@@ -1392,11 +1435,21 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "placeholderPlayer",
-					"sid": 212769419906945,
+					"sid": 604273721673947,
 					"parameters": {
 						"instance-variable": "ColdMeter",
-						"comparison": 3,
+						"comparison": 2,
 						"value": "ColdMeterMax"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 782956282035027,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 4,
+						"value": "-ColdMeterMax"
 					}
 				}
 			],

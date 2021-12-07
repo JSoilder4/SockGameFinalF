@@ -1,14 +1,19 @@
 {
-	"name": "Table_",
+	"name": "playerfeetbox",
 	"plugin-id": "Sprite",
-	"sid": 223717990031973,
+	"sid": 521454893022490,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 147178947950919
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 802934361597941
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 556629320799145
 		}
 	],
 	"effectTypes": [],
@@ -17,40 +22,32 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
+						"width": 8,
+						"height": 14,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.42857142857142855,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6324368,
+						"imageSpriteId": 6102500,
 						"collisionPoly": {
 							"points": [
-								0.125,
-								0.5,
-								0.875,
-								0.5,
-								0.75,
-								0.875,
-								0.6875,
-								0.875,
-								0.6875,
+								0.375,
+								0.7857142857142857,
 								0.625,
-								0.3125,
+								0.7857142857142857,
 								0.625,
-								0.3125,
-								0.875,
-								0.25,
-								0.875
+								0.9285714285714286,
+								0.375,
+								0.9285714285714286
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 193343160772203,
-				"name": "Default",
+				"sid": 236434789708164,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -2,7 +2,7 @@
 	"name": "Level 1",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Current Main",
 			"overriden": 0,
 			"instances": [
 				{
@@ -89,7 +89,14 @@
 					},
 					"uid": 24,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 2302,
 						"y": 213,
@@ -104,171 +111,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "RugTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 61,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 1825,
-							"max-height": 1250,
-							"data": "57x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,4961x0,1,1249x0,1,1249x0,1,1249x0,1,103737x0,1,1249x0,1,1249x0,1,1249x0,1,2156242x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "IceTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 30,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 1825,
-							"max-height": 1250,
-							"data": "10057x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1227x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1202x0,2,8x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1199x0,2,11x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,1249x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,2156230x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WoodTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 57,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 106,
-							"max-height": 60,
-							"data": "60x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,36x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,11x0,13x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,18x0,3,0,4x4,12x0,5x4,17x0,2x4,18x0,3,0,4x4,12x0,5x4,17x0,2x4,18x0,3,0,4x4,12x0,5x4,17x0,2x4,18x0,3,0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,8x0,16x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,15x0,3,4,15x0,3,3x4,20x0,4x4,15x0,3,4,15x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,7x0,3,16x4,32x0,3,3x4,7x0,3,16x4,32x0,3,3x4,7x0,3,52x4,7x0,3,112x4"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"zElevation": 0
 					}
 				},
@@ -305,6 +147,222 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Table_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 76,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 315.3270302251188,
+						"y": 879.3042473100093,
+						"width": 89.06110105310411,
+						"height": 89.06110105310411,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chair",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 77,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 377.4092585978012,
+						"y": 872.8574766508037,
+						"width": 39.02821569597806,
+						"height": 52.03762092797075,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Table_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 78,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 759.5097279667027,
+						"y": 879.3691406632499,
+						"width": 89.06110105310411,
+						"height": 89.06110105310411,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.2217304763960306,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chair",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 79,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 618.4505240416071,
+						"y": 897.8566347826197,
+						"width": -39.028216,
+						"height": 52.03762092797075,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Table_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 80,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1000.8407316006013,
+						"y": 911.485988991273,
+						"width": 89.06110105310411,
+						"height": 89.06110105310411,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chair",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 81,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1292.2913902449047,
+						"y": 915.1779812491349,
+						"width": -39.028216,
+						"height": 52.03762092797075,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 2.356194490192345,
 						"zElevation": 0
 					}
 				},
@@ -454,8 +512,8 @@
 						}
 					},
 					"world": {
-						"x": 76,
-						"y": 820,
+						"x": 76.00000000000003,
+						"y": 851.12148833722,
 						"width": 37.61093814342227,
 						"height": 65.81914175098896,
 						"originX": 0.5,
@@ -465,6 +523,55 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "playerfeetbox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 75,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 76.00000000000003,
+						"y": 851.12148833722,
+						"width": 37.610938,
+						"height": 65.819142,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"color": [
+							1,
+							1,
+							1,
+							0.01
 						],
 						"angle": 0,
 						"zElevation": 1
@@ -499,7 +606,268 @@
 			"global": false
 		},
 		{
-			"name": "Layer 1",
+			"name": "Rug",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "RugTileMapLayout1",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 106,
+							"height": 60,
+							"max-width": 1825,
+							"max-height": 1250,
+							"data": "57x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,1249x0,1,4961x0,1,1249x0,1,1249x0,1,1249x0,1,103737x0,1,1249x0,1,1249x0,1,1249x0,1,2156242x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 253707576966675,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Wood",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "WoodTileMapLayout1",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 106,
+							"height": 60,
+							"max-width": 106,
+							"max-height": 60,
+							"data": "60x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,35x0,3,5x4,17x0,2x4,36x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,11x0,13x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,18x0,3,5x4,12x0,5x4,17x0,2x4,18x0,3,5x4,12x0,5x4,17x0,2x4,18x0,3,5x4,12x0,5x4,17x0,2x4,18x0,3,5x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,8x0,3,11x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,8x0,16x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,12x0,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,17x0,2x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,11x0,3,5x4,15x0,3,3x4,20x0,4x4,15x0,3,4,15x0,3,3x4,20x0,4x4,15x0,3,4,15x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,20x0,4x4,32x0,3,3x4,7x0,3,16x4,32x0,3,3x4,7x0,3,16x4,32x0,3,3x4,7x0,3,52x4,7x0,3,112x4"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 927749115656858,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Ice",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "IceTileMapLayout1",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 106,
+							"height": 60,
+							"max-width": 1825,
+							"max-height": 1250,
+							"data": "10057x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1227x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1202x0,2,8x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1227x0,2,21x0,2,1227x0,2,21x0,2,1227x0,2,21x0,2,1227x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1206x0,2,4x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1204x0,2,6x0,2,15x0,2,21x0,2,1199x0,2,11x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,15x0,2,21x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,37x0,2,1211x0,2,1249x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1242x0,2,6x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,1249x0,2,2156230x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 752882761064761,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "SockTomFooleryLayer",
 			"overriden": 0,
 			"instances": [],
 			"sid": 959685919720831,
