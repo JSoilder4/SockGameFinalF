@@ -971,7 +971,8 @@
 									}
 								}
 							],
-							"sid": 388898856909398
+							"sid": 388898856909398,
+							"disabled": true
 						}
 					]
 				}
@@ -1321,9 +1322,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
+					"id": "is-overlapping-another-object",
 					"objectClass": "placeholderPlayer",
-					"sid": 831788137546859,
+					"sid": 756126511976941,
 					"parameters": {
 						"object": "Stairs"
 					}
@@ -1331,11 +1332,52 @@
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "winTextTemp",
-					"sid": 125620087145186,
+					"id": "set-visible",
+					"objectClass": "placeholderPlayer",
+					"sid": 136324910521769,
+					"disabled": true,
 					"parameters": {
-						"text": "\"You Win! For now..\""
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "placeholderPlayer",
+					"sid": 330624591074563,
+					"disabled": true,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "placeholderPlayer",
+					"sid": 628004086156628
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Stairs",
+					"sid": 458908332976994,
+					"parameters": {
+						"animation": "\"nextLevel\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 151960669926036,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 497509726986299,
+					"parameters": {
+						"which": "next"
 					}
 				}
 			],
@@ -1604,6 +1646,66 @@
 					"isOrBlock": true
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "placeholderPlayer",
+					"sid": 548192533127386,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "860"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 638624998442610,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 606352642513341,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "placeholderPlayer",
+					"sid": 509783407512735,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 365989275935219,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "placeholderPlayer",
+					"sid": 948085926547501,
+					"parameters": {
+						"x": "850"
+					}
+				}
+			],
+			"sid": 364642532906526,
+			"disabled": true
 		}
 	],
 	"sid": 629921702374011

@@ -134,6 +134,9 @@
 	},
 	"layouts": {
 		"items": [
+			"Level 0.1",
+			"Level 0.2",
+			"Level 0.3",
 			"Level 1",
 			"Level 2",
 			"Level 3"

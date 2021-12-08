@@ -930,18 +930,18 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
-						"x": 1636,
-						"y": 437,
-						"width": 18.676218631260962,
-						"height": 19.94888300702813,
+						"x": 1616.4623092850748,
+						"y": 413.71535490139024,
+						"width": 53.913746,
+						"height": 67.984488,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.47058823529411764,
 						"color": [
 							1,
 							1,
