@@ -111,9 +111,11 @@
 			"IceTileMapLayout1",
 			"WoodTileMapLayout1",
 			"outofboundsStopper",
-			"GrayboxingLayout2",
 			"GrayboxingLayout3",
-			"playerfeetbox"
+			"playerfeetbox",
+			"IceTileMapLayout2",
+			"WoodTileMapLayout2",
+			"RugTileMapLayout2"
 		],
 		"subfolders": []
 	},

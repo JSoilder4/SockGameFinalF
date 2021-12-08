@@ -766,7 +766,9 @@
 						"Cold": false,
 						"Neutral": false,
 						"ColdMeter": 0,
-						"firePowerup": false
+						"firePowerup": false,
+						"ColdIncrement": 0.1,
+						"SpeedTimes": 2
 					},
 					"behaviors": {
 						"Platform": {

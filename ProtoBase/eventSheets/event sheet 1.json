@@ -776,19 +776,19 @@
 								{
 									"id": "set-acceleration",
 									"objectClass": "placeholderPlayer",
-									"sid": 268768680439532,
+									"sid": 136630377966320,
 									"behaviorType": "Platform",
 									"parameters": {
-										"acceleration": "placeholderPlayer.Platform.Acceleration*1.333"
+										"acceleration": "placeholderPlayer.Platform.Acceleration*placeholderPlayer.SpeedTimes"
 									}
 								},
 								{
 									"id": "set-max-speed",
 									"objectClass": "placeholderPlayer",
-									"sid": 807615617268650,
+									"sid": 736255444454948,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-speed": "placeholderPlayer.Platform.MaxSpeed*1.333"
+										"max-speed": "placeholderPlayer.Platform.MaxSpeed*placeholderPlayer.SpeedTimes"
 									}
 								},
 								{
@@ -802,19 +802,19 @@
 								{
 									"id": "set-acceleration",
 									"objectClass": "placeholderPlayer",
-									"sid": 636313724188510,
+									"sid": 584243891736298,
 									"behaviorType": "Platform",
 									"parameters": {
-										"acceleration": "placeholderPlayer.Platform.Acceleration/1.333"
+										"acceleration": "placeholderPlayer.Platform.Acceleration/placeholderPlayer.SpeedTimes"
 									}
 								},
 								{
 									"id": "set-max-speed",
 									"objectClass": "placeholderPlayer",
-									"sid": 716543845997003,
+									"sid": 839081285818342,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-speed": "placeholderPlayer.Platform.MaxSpeed/1.333"
+										"max-speed": "placeholderPlayer.Platform.MaxSpeed/placeholderPlayer.SpeedTimes"
 									}
 								}
 							],

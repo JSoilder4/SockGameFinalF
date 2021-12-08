@@ -6,6 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"IceTileMapLayout1"
+		"IceTileMapLayout1",
+		"IceTileMapLayout2"
 	]
 }

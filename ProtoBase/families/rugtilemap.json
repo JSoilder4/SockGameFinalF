@@ -6,6 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"RugTileMapLayout1"
+		"RugTileMapLayout1",
+		"RugTileMapLayout2"
 	]
 }

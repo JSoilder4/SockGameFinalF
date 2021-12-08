@@ -27,6 +27,18 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 382237530604063
+		},
+		{
+			"name": "ColdIncrement",
+			"type": "number",
+			"desc": "",
+			"sid": 729970800895576
+		},
+		{
+			"name": "SpeedTimes",
+			"type": "number",
+			"desc": "",
+			"sid": 737808267467892
 		}
 	],
 	"behaviorTypes": [

@@ -488,7 +488,9 @@
 						"Cold": false,
 						"Neutral": false,
 						"ColdMeter": 0,
-						"firePowerup": false
+						"firePowerup": false,
+						"ColdIncrement": 0.1,
+						"SpeedTimes": 2
 					},
 					"behaviors": {
 						"Platform": {
@@ -927,8 +929,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 745.7902800907858,
-						"y": -31.220775722898622,
+						"x": 639.6970329833803,
+						"y": -78.8544785058154,
 						"width": 171.90646460973335,
 						"height": 30,
 						"originX": 0,

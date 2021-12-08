@@ -6,6 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"WoodTileMapLayout1"
+		"WoodTileMapLayout1",
+		"WoodTileMapLayout2"
 	]
 }
