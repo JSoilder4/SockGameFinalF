@@ -227,6 +227,14 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 743177444458741,
+									"parameters": {
+										"interval-seconds": "0.01"
+									}
+								},
+								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "placeholderPlayer",
 									"sid": 629617723354189,
@@ -311,6 +319,15 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 227680334480116,
+							"disabled": true,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						},
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "placeholderPlayer",
@@ -905,6 +922,14 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 482986271344430,
+							"parameters": {
+								"interval-seconds": "0.01"
+							}
+						},
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "placeholderPlayer",
@@ -1699,12 +1724,57 @@
 					"id": "set-x",
 					"objectClass": "placeholderPlayer",
 					"sid": 948085926547501,
+					"disabled": true,
 					"parameters": {
 						"x": "850"
 					}
 				}
 			],
 			"sid": 364642532906526,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 766002003322221
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "placeholderPlayer",
+					"sid": 399495365754735,
+					"parameters": {
+						"x": "placeholderPlayer.X+25"
+					}
+				}
+			],
+			"sid": 968358350724419,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 667481903306529
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "placeholderPlayer",
+					"sid": 423020515209016,
+					"parameters": {
+						"x": "placeholderPlayer.X-25"
+					}
+				}
+			],
+			"sid": 580154277540872,
 			"disabled": true
 		}
 	],
