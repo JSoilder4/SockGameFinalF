@@ -1,0 +1,27 @@
+{
+	"name": "End Screen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "backbutton",
+					"sid": 399369384507807
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 675425928710196,
+					"parameters": {
+						"layout": "Title"
+					}
+				}
+			],
+			"sid": 503383847643630
+		}
+	],
+	"sid": 375869939276481
+}

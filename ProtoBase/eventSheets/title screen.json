@@ -1,0 +1,27 @@
+{
+	"name": "Title Screen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Startbutton",
+					"sid": 722328192581385
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 880398049104952,
+					"parameters": {
+						"layout": "Level 1"
+					}
+				}
+			],
+			"sid": 672951184974933
+		}
+	],
+	"sid": 147023974605865
+}

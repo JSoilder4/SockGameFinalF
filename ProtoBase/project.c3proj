@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -115,7 +123,12 @@
 			"playerfeetbox",
 			"IceTileMapLayout2",
 			"WoodTileMapLayout2",
-			"RugTileMapLayout2"
+			"RugTileMapLayout2",
+			"WinMessage",
+			"WinMessage2",
+			"Title",
+			"Startbutton",
+			"backbutton"
 		],
 		"subfolders": []
 	},
@@ -142,13 +155,17 @@
 			"Level 2",
 			"Level 2.2",
 			"Level 3",
-			"Level 4"
+			"Level 4",
+			"End",
+			"Title"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Game",
+			"End Screen",
+			"Title Screen"
 		],
 		"subfolders": []
 	},
@@ -334,5 +351,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "Level 1"
+	"firstLayout": "Title"
 }
