@@ -128,7 +128,9 @@
 			"WinMessage2",
 			"Title",
 			"Startbutton",
-			"backbutton"
+			"backbutton",
+			"endScreenPlayer",
+			"WoodTilesENDSCREEN"
 		],
 		"subfolders": []
 	},

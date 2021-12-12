@@ -21,6 +21,31 @@
 				}
 			],
 			"sid": 503383847643630
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "endScreenPlayer",
+					"sid": 744547866870732,
+					"parameters": {
+						"animation": "\"Idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "endScreenPlayer",
+					"sid": 747635399971689,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 703878889079820
 		}
 	],
 	"sid": 375869939276481

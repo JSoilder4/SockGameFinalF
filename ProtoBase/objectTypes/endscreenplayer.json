@@ -1,70 +1,47 @@
 {
-	"name": "placeholderPlayer",
+	"name": "endScreenPlayer",
 	"plugin-id": "Sprite",
-	"sid": 946594074137771,
+	"sid": 695871403409951,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Cold",
 			"type": "boolean",
 			"desc": "",
-			"sid": 473660003239997
+			"sid": 493057091186394
 		},
 		{
 			"name": "Neutral",
 			"type": "boolean",
 			"desc": "",
-			"sid": 486938730165489
+			"sid": 245170501386660
 		},
 		{
 			"name": "ColdMeter",
 			"type": "number",
 			"desc": "",
-			"sid": 516540421013339
+			"sid": 509191552189408
 		},
 		{
 			"name": "firePowerup",
 			"type": "boolean",
 			"desc": "",
-			"sid": 382237530604063
+			"sid": 851898841294884
 		},
 		{
 			"name": "ColdIncrement",
 			"type": "number",
 			"desc": "",
-			"sid": 729970800895576
+			"sid": 433267470651617
 		},
 		{
 			"name": "SpeedTimes",
 			"type": "number",
 			"desc": "",
-			"sid": 737808267467892
-		},
-		{
-			"name": "coldIncInc",
-			"type": "number",
-			"desc": "",
-			"sid": 196597062170654
-		},
-		{
-			"name": "Rug",
-			"type": "boolean",
-			"desc": "",
-			"sid": 870526660597682
+			"sid": 800879000433672
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 645380384176721
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 348259002543785
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -78,7 +55,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1146388,
+						"imageSpriteId": 5308656,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -102,7 +79,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5589450,
+						"imageSpriteId": 4650497,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -126,7 +103,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7321893,
+						"imageSpriteId": 9404268,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -143,7 +120,7 @@
 						"duration": 3
 					}
 				],
-				"sid": 576297427436357,
+				"sid": 710659167308481,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
@@ -161,7 +138,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1385373,
+						"imageSpriteId": 4599580,
 						"collisionPoly": {
 							"points": [
 								0.2727272727272727,
@@ -185,7 +162,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9503797,
+						"imageSpriteId": 3985787,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -209,7 +186,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9474544,
+						"imageSpriteId": 2622437,
 						"collisionPoly": {
 							"points": [
 								0.2727272727272727,
@@ -226,7 +203,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 155990397613126,
+				"sid": 318837585007935,
 				"name": "run",
 				"isLooping": false,
 				"isPingPong": false,
@@ -244,7 +221,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1041919,
+						"imageSpriteId": 9252928,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -268,7 +245,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7206963,
+						"imageSpriteId": 4673067,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -292,7 +269,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4303158,
+						"imageSpriteId": 3789554,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -309,7 +286,7 @@
 						"duration": 3
 					}
 				],
-				"sid": 235781829833844,
+				"sid": 978427941357549,
 				"name": "iceDie",
 				"isLooping": false,
 				"isPingPong": false,
@@ -327,7 +304,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3138577,
+						"imageSpriteId": 2021782,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -351,7 +328,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1206528,
+						"imageSpriteId": 5664540,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -375,7 +352,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9600826,
+						"imageSpriteId": 9989076,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -399,7 +376,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5717006,
+						"imageSpriteId": 6139534,
 						"collisionPoly": {
 							"points": [
 								0.25,
@@ -416,7 +393,7 @@
 						"duration": 3
 					}
 				],
-				"sid": 688753791510395,
+				"sid": 613930744923445,
 				"name": "fireDie",
 				"isLooping": false,
 				"isPingPong": false,

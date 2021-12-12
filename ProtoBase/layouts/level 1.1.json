@@ -1248,7 +1248,9 @@
 						"ColdMeter": 0,
 						"firePowerup": false,
 						"ColdIncrement": 0.1,
-						"SpeedTimes": 2
+						"SpeedTimes": 2,
+						"coldIncInc": 0.01,
+						"Rug": false
 					},
 					"behaviors": {
 						"Platform": {

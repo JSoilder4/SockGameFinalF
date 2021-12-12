@@ -120,6 +120,15 @@
 								"instance-variable": "Neutral",
 								"value": "false"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 300794525845559,
+							"parameters": {
+								"instance-variable": "Rug",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 165516200078157
@@ -137,6 +146,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 340835451650972,
+							"parameters": {
+								"instance-variable": "Rug",
+								"value": "false"
+							}
+						},
 						{
 							"id": "set-boolean-instvar",
 							"objectClass": "placeholderPlayer",
@@ -172,13 +190,8 @@
 					],
 					"actions": [
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "placeholderPlayer",
-							"sid": 929017289402007,
-							"parameters": {
-								"instance-variable": "Neutral",
-								"value": "true"
-							}
+							"callFunction": "NuetralWood",
+							"sid": 871113940388377
 						}
 					],
 					"sid": 101677728048597
@@ -197,16 +210,80 @@
 					],
 					"actions": [
 						{
+							"callFunction": "NuetralWood",
+							"sid": 375229299603672
+						}
+					],
+					"sid": 604751493135143
+				},
+				{
+					"functionName": "NuetralWood",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "placeholderPlayer",
+							"sid": 502925762212777,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "330"
+							}
+						},
+						{
 							"id": "set-boolean-instvar",
 							"objectClass": "placeholderPlayer",
-							"sid": 774819879032368,
+							"sid": 289801227228379,
+							"parameters": {
+								"instance-variable": "Cold",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 778404902096242,
+							"parameters": {
+								"instance-variable": "Rug",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "placeholderPlayer",
+							"sid": 234745535619428,
+							"parameters": {
+								"instance-variable": "coldIncInc",
+								"value": "0.01"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 636096943065353,
 							"parameters": {
 								"instance-variable": "Neutral",
 								"value": "true"
 							}
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "placeholderPlayer",
+							"sid": 441947716404096,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "650"
+							}
 						}
 					],
-					"sid": 604751493135143
+					"sid": 311727987758315
 				},
 				{
 					"eventType": "block",
@@ -227,11 +304,33 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 484531258838293
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 161443485999039,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"value": "ColdMeterMax/10"
+									}
+								}
+							],
+							"sid": 211793040615918
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 743177444458741,
+									"sid": 504890259482827,
 									"parameters": {
-										"interval-seconds": "0.01"
+										"interval-seconds": "0.001"
 									}
 								},
 								{
@@ -264,14 +363,85 @@
 								{
 									"id": "add-to-instvar",
 									"objectClass": "placeholderPlayer",
-									"sid": 481490168551396,
+									"sid": 621191508103385,
 									"parameters": {
 										"instance-variable": "ColdMeter",
-										"value": "0.1"
+										"value": "placeholderPlayer.ColdIncrement+placeholderPlayer.coldIncInc"
 									}
 								}
 							],
-							"sid": 522185551268456
+							"sid": 522185551268456,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 450961674439840,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "placeholderPlayer",
+											"sid": 209260604351859,
+											"parameters": {
+												"instance-variable": "coldIncInc",
+												"value": "0.01"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "placeholderPlayer",
+											"sid": 962755628554954,
+											"disabled": true,
+											"behaviorType": "Platform",
+											"parameters": {
+												"max-speed": "placeholderPlayer.Platform.MaxSpeed-3"
+											}
+										}
+									],
+									"sid": 704046458360267
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-on-floor",
+											"objectClass": "placeholderPlayer",
+											"sid": 961180496473658,
+											"behaviorType": "Platform",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "placeholderPlayer",
+											"sid": 837754366452952,
+											"parameters": {
+												"instance-variable": "coldIncInc",
+												"value": "0.01"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "placeholderPlayer",
+											"sid": 553194489864817,
+											"disabled": true,
+											"behaviorType": "Platform",
+											"parameters": {
+												"max-speed": "330"
+											}
+										}
+									],
+									"sid": 868840295365691
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -321,12 +491,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 227680334480116,
-							"disabled": true,
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 852347618274481,
 							"parameters": {
-								"interval-seconds": "0.1"
+								"instance-variable": "Rug"
 							}
 						},
 						{
@@ -386,6 +555,35 @@
 							"parameters": {
 								"instance-variable": "ColdMeter",
 								"value": "0.1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "placeholderPlayer",
+							"sid": 464894613185389,
+							"parameters": {
+								"instance-variable": "coldIncInc",
+								"value": "0.01"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "placeholderPlayer",
+							"sid": 344345949212900,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "330"
+							}
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "placeholderPlayer",
+							"sid": 533477146051980,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "650"
 							}
 						}
 					],
@@ -771,6 +969,15 @@
 							"parameters": {
 								"instance-variable": "ColdMeter",
 								"value": "ColdMeterMax * 1/10"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 621821310752204,
+							"parameters": {
+								"instance-variable": "Cold",
+								"value": "false"
 							}
 						}
 					],

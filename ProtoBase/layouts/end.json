@@ -11,7 +11,7 @@
 						"text": "SWEET SOCK PUPPETS PAINTING ON A FAKE WHITEBOARD CANVAS. YA DID IT JAMES! YA GOT THE SUPER DE DUPER SOCK!",
 						"enable-bbcode": true,
 						"font": "Haettenschweiler",
-						"size": 31.51999861035156,
+						"size": 30,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -34,7 +34,7 @@
 						"x": 118,
 						"y": 3,
 						"width": 607,
-						"height": 178,
+						"height": 245,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -44,226 +44,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WoodTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 143,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 106,
-							"max-height": 60,
-							"data": "8x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,3171x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 292,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WoodTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 144,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 106,
-							"max-height": 60,
-							"data": "8x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,3171x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 308,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WoodTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 145,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 106,
-							"max-height": 60,
-							"data": "8x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,3171x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 1,
-						"y": 323,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WoodTileMapLayout1",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 146,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 106,
-							"height": 60,
-							"max-width": 106,
-							"max-height": 60,
-							"data": "8x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,9x0,3,49x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,59x0,4,3171x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 339,
-						"width": 1708,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"zElevation": 0
 					}
 				},
@@ -287,10 +67,10 @@
 						}
 					},
 					"world": {
-						"x": 522,
-						"y": 298,
-						"width": 262,
-						"height": 327,
+						"x": 529,
+						"y": 319,
+						"width": 267.183303,
+						"height": 267.183303,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -318,10 +98,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 531,
-						"y": 238,
-						"width": 120.32429980185421,
-						"height": 167.7769871780131,
+						"x": 535,
+						"y": 285,
+						"width": 54.9729,
+						"height": 89.330961,
 						"originX": 0.58545197740113,
 						"originY": 0.7153846153846154,
 						"color": [
@@ -360,10 +140,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 601,
-						"y": 347,
-						"width": 250,
-						"height": 61,
+						"x": 627,
+						"y": 293,
+						"width": 247,
+						"height": 128,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -407,7 +187,7 @@
 					}
 				},
 				{
-					"type": "placeholderPlayer",
+					"type": "endScreenPlayer",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -415,7 +195,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 147,
+					"uid": 154,
 					"instanceVariables": {
 						"Cold": false,
 						"Neutral": false,
@@ -424,32 +204,12 @@
 						"ColdIncrement": 0.1,
 						"SpeedTimes": 2
 					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 154,
-						"y": 310,
-						"width": 130.67093814342226,
-						"height": 220.25914175098896,
+						"x": 146,
+						"y": 320,
+						"width": 112.832814,
+						"height": 197.457426,
 						"originX": 0.5,
 						"originY": 0.42857142857142855,
 						"color": [
@@ -479,6 +239,93 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "wood",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "WoodTilesENDSCREEN",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 147,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 106,
+							"height": 60,
+							"max-width": 106,
+							"max-height": 60,
+							"data": "26x4,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,4,25x0,3,3x4,30x0,30x4,3150x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 424595935829712,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
