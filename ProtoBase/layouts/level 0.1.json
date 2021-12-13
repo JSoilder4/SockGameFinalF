@@ -27,10 +27,10 @@
 					"world": {
 						"x": 2302,
 						"y": 213,
-						"width": 16,
-						"height": 16,
+						"width": 14,
+						"height": 8,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.125,
 						"color": [
 							1,
 							1,

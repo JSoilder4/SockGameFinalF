@@ -69,41 +69,10 @@
 					"world": {
 						"x": 529,
 						"y": 319,
-						"width": 267.183303,
-						"height": 267.183303,
+						"width": 233.78539012500002,
+						"height": 133.5916515,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sock",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 149,
-					"instanceVariables": {
-						"function": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 535,
-						"y": 285,
-						"width": 54.9729,
-						"height": 89.330961,
-						"originX": 0.58545197740113,
-						"originY": 0.7153846153846154,
+						"originY": 0.125,
 						"color": [
 							1,
 							1,
@@ -184,6 +153,37 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "THESOCKS",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 149,
+					"instanceVariables": {
+						"function": "WIN"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 545,
+						"y": 284,
+						"width": 96,
+						"height": 96,
+						"originX": 0.624482109227872,
+						"originY": 0.6964102564102564,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{

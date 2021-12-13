@@ -376,6 +376,12 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "is-on-floor",
+											"objectClass": "placeholderPlayer",
+											"sid": 741495651447248,
+											"behaviorType": "Platform"
+										},
+										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
 											"sid": 450961674439840,
@@ -439,7 +445,8 @@
 											}
 										}
 									],
-									"sid": 868840295365691
+									"sid": 868840295365691,
+									"disabled": true
 								}
 							]
 						},
@@ -879,9 +886,9 @@
 						{
 							"id": "move-to-layer",
 							"objectClass": "Socks",
-							"sid": 745328109551083,
+							"sid": 927613976342599,
 							"parameters": {
-								"layer": "4"
+								"layer": "5"
 							}
 						},
 						{
@@ -975,6 +982,7 @@
 							"id": "set-boolean-instvar",
 							"objectClass": "placeholderPlayer",
 							"sid": 621821310752204,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "Cold",
 								"value": "false"
@@ -1124,6 +1132,32 @@
 								}
 							],
 							"sid": 137939809715055
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 410270152678800,
+									"parameters": {
+										"first-value": "function",
+										"comparison": 0,
+										"second-value": "\"WIN\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 138426409424750,
+									"parameters": {
+										"layout": "End"
+									}
+								}
+							],
+							"sid": 724996858292084
 						}
 					]
 				},
@@ -1554,6 +1588,28 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 607678349443187,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 3,
+						"value": "-ColdMeterMax"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "placeholderPlayer",
+					"sid": 664128370592137,
+					"parameters": {
+						"instance-variable": "ColdMeter",
+						"comparison": 5,
+						"value": "ColdMeterMax"
+					},
+					"isInverted": true
+				},
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "placeholderPlayer",
