@@ -678,7 +678,7 @@
 						"Neutral": false,
 						"ColdMeter": 0,
 						"firePowerup": false,
-						"ColdIncrement": 0.1,
+						"ColdIncrement": 0.15,
 						"SpeedTimes": 1.5,
 						"coldIncInc": 0.01,
 						"Rug": false,

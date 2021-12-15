@@ -8,7 +8,7 @@
 				{
 					"type": "WinMessage",
 					"properties": {
-						"text": "SWEET SOCK PUPPETS PAINTING ON A FAKE WHITEBOARD CANVAS. YA DID IT JAMES! YA GOT THE SUPER DE DUPER SOCK!",
+						"text": "YA DID IT JAMES! YA GOT YA SPECIAL SOCKS! CONGRATS!",
 						"enable-bbcode": true,
 						"font": "Haettenschweiler",
 						"size": 30,
@@ -31,10 +31,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 118,
-						"y": 3,
-						"width": 607,
-						"height": 245,
+						"x": 133,
+						"y": 44,
+						"width": 575,
+						"height": 152,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -109,9 +109,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 627,
-						"y": 293,
-						"width": 247,
+						"x": 661,
+						"y": 251,
+						"width": 193,
 						"height": 128,
 						"originX": 0,
 						"originY": 0,

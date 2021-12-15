@@ -174,6 +174,150 @@
 					}
 				},
 				{
+					"type": "Chair",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 277,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 380.7193736274012,
+						"y": 808.6261055563577,
+						"width": 39.02821569597806,
+						"height": 52.03762092797075,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Table_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 278,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 322.2367198793589,
+						"y": 815.2218553652956,
+						"width": 77.928463,
+						"height": 44.53055,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chair",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 279,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1240.875769912608,
+						"y": 810.8440714904759,
+						"width": -39.028216,
+						"height": 52.03762092797075,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Table_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 280,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1288.5195585243077,
+						"y": 817.4398212994138,
+						"width": 77.928463,
+						"height": 44.53055,
+						"originX": 0.5,
+						"originY": 0.125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "placeholderPlayer",
 					"properties": {
 						"initially-visible": true,
@@ -280,6 +424,42 @@
 							1,
 							1,
 							0.01
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "Stairs2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 276,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 75.46386450008487,
+						"y": 813.6827699878377,
+						"width": -53.913746,
+						"height": 67.984488,
+						"originX": 0.5,
+						"originY": 0.47058823529411764,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 1
@@ -434,7 +614,7 @@
 							"height": 60,
 							"max-width": 106,
 							"max-height": 60,
-							"data": "9x4,39x4vd,4,11x4vd,9x4,35x4vd,25x4,20x4vd,40x4,20x4vd,17x4,7x0,16x4,20x4vd,16x4,8x0,16x4,20x4vd,15x4,9x0,16x4,20x4vd,14x4,10x0,16x4,20x4vd,13x4,11x0,16x4,20x4vd,12x4,12x0,16x4,20x4vd,11x4,13x0,16x4,20x4vd,10x4,14x0,16x4,20x4vd,9x4,15x0,16x4,20x4vd,8x4,16x0,16x4,20x4vd,7x4,17x0,16x4,20x4vd,6x4,18x0,4,6x4vd,9x4,20x4vd,5x4,19x0,7x4vd,9x4,20x4vd,4x4,20x0,7x4vd,9x4,20x4vd,3x4,21x0,7x4vd,9x4,20x4vd,2x4,22x0,7x4vd,9x4,20x4vd,4,23x0,7x4vd,9x4,20x4vd,24x0,7x4vd,9x4,19x4vd,25x0,7x4vd,9x4,18x4vd,26x0,7x4vd,9x4,17x4vd,27x0,7x4vd,9x4,16x4vd,28x0,7x4vd,9x4,15x4vd,29x0,7x4vd,9x4,14x4vd,30x0,7x4vd,9x4,13x4vd,31x0,7x4vd,9x4,12x4vd,32x0,7x4vd,9x4,11x4vd,33x0,7x4vd,9x4,10x4vd,34x0,7x4vd,9x4,9x4vd,34x0,8x4vd,9x4,8x4vd,34x0,4vd,2x4,6x4vd,9x4,7x4vd,34x0,4vd,3x4,6x4vd,9x4,6x4vd,34x0,4vd,4x4,6x4vd,9x4,5x4vd,34x0,4vd,4x4,7x4vd,9x4,4x4vd,34x0,4vd,5x4,7x4vd,9x4,3x4vd,34x0,4vd,6x4,7x4vd,9x4,2x4vd,34x0,4vd,8x4,6x4vd,9x4,4vd,34x0,4vd,9x4,6x4vd,9x4,34x0,4vd,10x4,6x4vd,8x4,34x0,18x4vd,7x4,34x0,19x4vd,6x4,34x0,4vd,12x4,7x4vd,5x4,34x0,2x4vd,12x4,7x4vd,4x4,34x0,22x4vd,3x4,34x0,23x4vd,2x4,34x0,2x4vd,15x4,7x4vd,4,34x0,3x4vd,15x4,7x4vd,35x0,4vd,18x4,6x4vd,35x0,4vd,18x4,6x4vd,35x0,4vd,18x4,6x4vd,35x0,4vd,18x4,6x4vd,35x0,4vd,18x4,7x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,26x4vd,35x0,25x4vd,4,35x0,24x4vd,2x4,35x0,23x4vd,3x4,35x0,22x4vd,4x4,35x0,21x4vd,5x4,35x0,20x4vd,6x4,35x0,19x4vd,7x4,35x0,18x4vd,8x4,35x0,17x4vd,9x4,35x0,16x4vd,10x4,34x0,16x4vd,11x4,33x0,16x4vd,12x4,32x0,16x4vd,13x4,31x0,16x4vd,14x4,30x0,16x4vd,15x4,29x0,16x4vd,16x4,28x0,16x4vd,17x4,27x0,16x4vd,18x4,26x0,16x4vd,19x4,25x0,16x4vd,20x4,24x0,16x4vd,21x4,23x0,16x4vd,22x4,22x0,16x4vd,23x4,21x0,16x4vd,24x4,20x0,16x4vd,25x4,19x0,16x4vd,26x4,18x0,16x4vd,27x4,17x0,16x4vd,28x4,16x0,16x4vd,29x4,15x0,16x4vd,30x4,14x0,7x4,9x4vd,31x4,13x0,7x4,9x4vd,32x4,12x0,7x4,9x4vd,33x4,11x0,7x4,9x4vd,34x4,10x0,7x4,9x4vd,35x4,9x0,7x4,9x4vd,36x4,8x0,7x4,9x4vd,37x4,7x0,7x4,9x4vd,51x4,9x4vd,51x4,9x4vd,51x4,9x4vd,51x4,120x4vd"
+							"data": "9x4,39x4vd,4,11x4vd,9x4,35x4vd,25x4,20x4vd,40x4,20x4vd,17x4,7x0,3,15x4,20x4vd,16x4,8x0,3,15x4,20x4vd,15x4,9x0,3,15x4,20x4vd,14x4,10x0,3,15x4,20x4vd,13x4,11x0,3,15x4,20x4vd,12x4,12x0,3,15x4,20x4vd,11x4,13x0,3,15x4,20x4vd,10x4,14x0,3,15x4,20x4vd,9x4,15x0,3,15x4,20x4vd,8x4,16x0,3,15x4,20x4vd,7x4,17x0,3,15x4,20x4vd,6x4,18x0,3,6x4vd,9x4,20x4vd,5x4,19x0,3,6x4vd,9x4,20x4vd,4x4,20x0,3,6x4vd,9x4,20x4vd,3x4,21x0,3,6x4vd,9x4,20x4vd,2x4,22x0,3,6x4vd,9x4,20x4vd,4,23x0,3,6x4vd,9x4,20x4vd,24x0,3,6x4vd,9x4,19x4vd,25x0,3,6x4vd,9x4,18x4vd,26x0,3,6x4vd,9x4,17x4vd,27x0,3,6x4vd,9x4,16x4vd,28x0,3,6x4vd,9x4,15x4vd,29x0,3,6x4vd,9x4,14x4vd,30x0,3,6x4vd,9x4,13x4vd,31x0,3,6x4vd,9x4,12x4vd,32x0,3,6x4vd,9x4,11x4vd,33x0,3,6x4vd,9x4,10x4vd,34x0,3,6x4vd,9x4,9x4vd,34x0,3,7x4vd,9x4,8x4vd,34x0,3,2x4,6x4vd,9x4,7x4vd,34x0,3,3x4,6x4vd,9x4,6x4vd,34x0,3,4x4,6x4vd,9x4,5x4vd,34x0,3,4x4,7x4vd,9x4,4x4vd,34x0,3,5x4,7x4vd,9x4,3x4vd,34x0,3,6x4,7x4vd,9x4,2x4vd,34x0,3,8x4,6x4vd,9x4,4vd,34x0,3,9x4,6x4vd,9x4,34x0,3,10x4,6x4vd,8x4,34x0,3,17x4vd,7x4,34x0,3,18x4vd,6x4,34x0,3,12x4,7x4vd,5x4,34x0,3,4vd,12x4,7x4vd,4x4,34x0,3,21x4vd,3x4,34x0,3,22x4vd,2x4,34x0,3,4vd,15x4,7x4vd,4,34x0,3,2x4vd,15x4,7x4vd,35x0,3,18x4,6x4vd,35x0,3,18x4,6x4vd,35x0,3,18x4,6x4vd,35x0,3,18x4,6x4vd,35x0,3,18x4,7x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,25x4vd,35x0,3,24x4vd,4,35x0,3,23x4vd,2x4,35x0,3,22x4vd,3x4,35x0,3,21x4vd,4x4,35x0,3,20x4vd,5x4,35x0,3,19x4vd,6x4,35x0,3,18x4vd,7x4,35x0,3,17x4vd,8x4,35x0,3,16x4vd,9x4,35x0,3,15x4vd,10x4,34x0,3,15x4vd,11x4,33x0,3,15x4vd,12x4,32x0,3,15x4vd,13x4,31x0,3,15x4vd,14x4,30x0,3,15x4vd,15x4,29x0,3,15x4vd,16x4,28x0,3,15x4vd,17x4,27x0,3,15x4vd,18x4,26x0,3,15x4vd,19x4,25x0,3,15x4vd,20x4,24x0,3,15x4vd,21x4,23x0,3,15x4vd,22x4,22x0,3,15x4vd,23x4,21x0,3,15x4vd,24x4,20x0,3,15x4vd,25x4,19x0,3,15x4vd,26x4,18x0,3,15x4vd,27x4,17x0,3,15x4vd,28x4,16x0,3,15x4vd,29x4,15x0,3,15x4vd,30x4,14x0,3,6x4,9x4vd,31x4,13x0,3,6x4,9x4vd,32x4,12x0,3,6x4,9x4vd,33x4,11x0,3,6x4,9x4vd,34x4,10x0,3,6x4,9x4vd,35x4,9x0,3,6x4,9x4vd,36x4,8x0,3,6x4,9x4vd,37x4,7x0,3,6x4,9x4vd,51x4,9x4vd,51x4,9x4vd,51x4,9x4vd,51x4,120x4vd"
 						},
 						"tile-width": 16,
 						"tile-height": 16,

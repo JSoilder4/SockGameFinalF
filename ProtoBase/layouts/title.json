@@ -2,16 +2,81 @@
 	"name": "Title",
 	"layers": [
 		{
+			"name": "background",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "TiledBackground4",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 281,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 1708,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 283735059070913,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [
 				{
 					"type": "Title",
 					"properties": {
-						"text": "SOCK IT TO 'EM",
+						"text": "Icy Hot Socks",
 						"enable-bbcode": true,
 						"font": "Haettenschweiler",
-						"size": 48.280000305175726,
+						"size": 50,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -31,9 +96,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 270,
-						"y": 133,
-						"width": 295,
+						"x": 192.75757575757575,
+						"y": -103.18181818181829,
+						"width": 491,
 						"height": 86,
 						"originX": 0,
 						"originY": 0,
@@ -63,8 +128,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 311,
-						"y": 292,
+						"x": 273.8787878787879,
+						"y": 256.3939393939394,
 						"width": 206,
 						"height": 63,
 						"originX": 0,
@@ -75,6 +140,132 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Text2",
+					"properties": {
+						"text": "[outline=#000000]Icy",
+						"enable-bbcode": true,
+						"font": "Bradley Hand ITC TT",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0.3843137254901961,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 282,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 202.2734148430101,
+						"y": 144.43963021943065,
+						"width": 90.15151515151513,
+						"height": 93.63636363636368,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text2",
+					"properties": {
+						"text": "[outline=#000000]Hot",
+						"enable-bbcode": true,
+						"font": "Bradley Hand ITC TT",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 283,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 302.273415,
+						"y": 144.43963,
+						"width": 103.78787878787881,
+						"height": 93.63636363636368,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text2",
+					"properties": {
+						"text": "[outline=#000000]Socks",
+						"enable-bbcode": true,
+						"font": "Bradley Hand ITC TT",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 284,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 412.273415,
+						"y": 144.43963,
+						"width": 165.15151515151518,
+						"height": 93.63636363636368,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
@@ -93,7 +284,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

@@ -145,7 +145,10 @@
 			"TiledBackground3",
 			"THESOCKS",
 			"StairsDown",
-			"Text"
+			"Text",
+			"Stairs2",
+			"Text2",
+			"Sprite2"
 		],
 		"subfolders": []
 	},
@@ -341,7 +344,7 @@
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",
 		"fullscreenQuality": "high",
-		"viewportFit": "auto",
+		"viewportFit": "cover",
 		"backgroundColor": [
 			0,
 			0,

@@ -330,9 +330,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 504890259482827,
+									"sid": 817306160368580,
 									"parameters": {
-										"interval-seconds": "0.001"
+										"interval-seconds": "0.01"
 									}
 								},
 								{
@@ -2108,74 +2108,146 @@
 			]
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-end-of-layout",
-					"objectClass": "System",
-					"sid": 766002003322221
-				}
-			],
-			"actions": [
-				{
-					"id": "set-x",
-					"objectClass": "placeholderPlayer",
-					"sid": 399495365754735,
-					"parameters": {
-						"x": "placeholderPlayer.X+25"
-					}
-				}
-			],
-			"sid": 968358350724419,
-			"disabled": true
+			"eventType": "variable",
+			"name": "moosic",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 329900538022622
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 667481903306529
-				}
-			],
-			"actions": [
-				{
-					"id": "set-x",
-					"objectClass": "placeholderPlayer",
-					"sid": 423020515209016,
-					"parameters": {
-						"x": "placeholderPlayer.X-25"
-					}
-				}
-			],
-			"sid": 580154277540872,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 286954951966396
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
+					"id": "is-tag-playing",
 					"objectClass": "Audio",
-					"sid": 667093953285281,
+					"sid": 558129522532599,
 					"parameters": {
-						"audio-file": "slow-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com",
-						"loop": "looping",
-						"volume": "-45",
-						"tag-optional": "\"main\""
+						"tag": "\"main\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 647556445567551,
+					"parameters": {
+						"variable": "moosic"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 537749363436472,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 174102484897168
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 988181383262370,
+							"parameters": {
+								"audio-file": "slow-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com",
+								"loop": "looping",
+								"volume": "-45",
+								"tag-optional": "\"main\""
+							}
+						},
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 880414258110691,
+							"parameters": {
+								"tag": "\"main\"",
+								"db": "-15",
+								"duration": "3",
+								"ending": "keep-playing"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 945378364126134,
+							"parameters": {
+								"variable": "moosic",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 648391142081496
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 588793233909620
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 659401934447761,
+					"parameters": {
+						"tag": "\"main\"",
+						"db": "-45",
+						"duration": "0.00001",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 564577172559188
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 937312401743905,
+					"disabled": true,
+					"parameters": {
+						"tag": "\"main\""
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 820660898469627,
+					"parameters": {
+						"tag": "\"win\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 431163360884541,
+					"parameters": {
+						"tag": "\"main\"",
+						"state": "resume"
 					}
 				},
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 234335471358470,
+					"sid": 504696218018492,
 					"parameters": {
 						"tag": "\"main\"",
 						"db": "-15",
@@ -2184,35 +2256,7 @@
 					}
 				}
 			],
-			"sid": 537749363436472,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-tag-playing",
-							"objectClass": "Audio",
-							"sid": 777603002552338,
-							"parameters": {
-								"tag": "\"main\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-paused",
-							"objectClass": "Audio",
-							"sid": 769108597955080,
-							"parameters": {
-								"tag": "\"main\"",
-								"state": "resume"
-							}
-						}
-					],
-					"sid": 648391142081496,
-					"disabled": true
-				}
-			]
+			"sid": 606970522297408
 		},
 		{
 			"eventType": "block",
@@ -2228,11 +2272,12 @@
 			],
 			"actions": [
 				{
-					"id": "stop",
+					"id": "set-paused",
 					"objectClass": "Audio",
-					"sid": 488839022232645,
+					"sid": 467978080405929,
 					"parameters": {
-						"tag": "\"main\""
+						"tag": "\"main\"",
+						"state": "pause"
 					}
 				}
 			],
@@ -2258,13 +2303,8 @@
 					}
 				}
 			],
-			"sid": 538636923127195
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 935923153450097
+			"sid": 538636923127195,
+			"disabled": true
 		}
 	],
 	"sid": 629921702374011
