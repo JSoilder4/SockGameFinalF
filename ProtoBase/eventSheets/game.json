@@ -174,7 +174,31 @@
 							}
 						}
 					],
-					"sid": 830392499455822
+					"sid": 830392499455822,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 536730132218432
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 161981309688140,
+									"parameters": {
+										"instance-variable": "ColdMeter",
+										"value": "ColdMeterMax/20"
+									}
+								}
+							],
+							"sid": 277475337023511
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -304,34 +328,21 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 484531258838293
-								}
-							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "placeholderPlayer",
-									"sid": 161443485999039,
-									"parameters": {
-										"instance-variable": "ColdMeter",
-										"value": "ColdMeterMax/10"
-									}
-								}
-							],
-							"sid": 211793040615918
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
 									"sid": 504890259482827,
 									"parameters": {
 										"interval-seconds": "0.001"
 									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "placeholderPlayer",
+									"sid": 234157032930709,
+									"parameters": {
+										"instance-variable": "dying"
+									},
+									"isInverted": true
 								},
 								{
 									"id": "is-boolean-instance-variable-set",
@@ -376,18 +387,18 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 908173418370420,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										},
+										{
 											"id": "is-on-floor",
 											"objectClass": "placeholderPlayer",
 											"sid": 741495651447248,
 											"behaviorType": "Platform"
-										},
-										{
-											"id": "every-x-seconds",
-											"objectClass": "System",
-											"sid": 450961674439840,
-											"parameters": {
-												"interval-seconds": "0.1"
-											}
 										}
 									],
 									"actions": [
@@ -497,6 +508,15 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 852762214693601,
+							"parameters": {
+								"instance-variable": "dying"
+							},
+							"isInverted": true
+						},
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "placeholderPlayer",
@@ -715,6 +735,33 @@
 							],
 							"actions": [
 								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 279648221610199,
+									"parameters": {
+										"instance-variable": "dying",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 738776209884185,
+									"parameters": {
+										"instance-variable": "speed",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 295799053125742,
+									"parameters": {
+										"instance-variable": "firePowerup",
+										"value": "false"
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "placeholderPlayer",
 									"sid": 202059362039760,
@@ -802,6 +849,33 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 909020864697361,
+									"parameters": {
+										"instance-variable": "dying",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 490946170354068,
+									"parameters": {
+										"instance-variable": "speed",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 482128690426740,
+									"parameters": {
+										"instance-variable": "firePowerup",
+										"value": "false"
+									}
+								},
 								{
 									"id": "set-animation",
 									"objectClass": "placeholderPlayer",
@@ -1025,6 +1099,14 @@
 									}
 								},
 								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 936818578815799,
+									"parameters": {
+										"instance-variable": "speed"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 205493969152086,
@@ -1049,6 +1131,14 @@
 									"parameters": {
 										"max-speed": "placeholderPlayer.Platform.MaxSpeed/placeholderPlayer.SpeedTimes"
 									}
+								},
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "placeholderPlayer",
+									"sid": 550825495176165,
+									"parameters": {
+										"instance-variable": "speed"
+									}
 								}
 							],
 							"sid": 768913099377527
@@ -1057,45 +1147,107 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 853088961331843,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "placeholderPlayer",
+									"sid": 574454812243774,
 									"parameters": {
-										"first-value": "function",
-										"comparison": 0,
-										"second-value": "\"fire\""
+										"instance-variable": "firePowerup"
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 310487327431549,
+							"children": [
 								{
-									"id": "set-boolean-instvar",
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 111510847950506,
+											"parameters": {
+												"first-value": "function",
+												"comparison": 0,
+												"second-value": "\"fire\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "placeholderPlayer",
+											"sid": 930015038625842,
+											"parameters": {
+												"instance-variable": "ColdMeter",
+												"value": "ColdMeterMax/5"
+											}
+										}
+									],
+									"sid": 170174318481943
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "placeholderPlayer",
-									"sid": 499335587527726,
+									"sid": 856589812792614,
 									"parameters": {
-										"instance-variable": "firePowerup",
-										"value": "true"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 886223798609006,
-									"parameters": {
-										"seconds": "5"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "placeholderPlayer",
-									"sid": 121284055163987,
-									"parameters": {
-										"instance-variable": "firePowerup",
-										"value": "false"
-									}
+										"instance-variable": "firePowerup"
+									},
+									"isInverted": true
 								}
 							],
-							"sid": 455344256672263
+							"actions": [],
+							"sid": 455344256672263,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 848254009215868,
+											"parameters": {
+												"first-value": "function",
+												"comparison": 0,
+												"second-value": "\"fire\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "placeholderPlayer",
+											"sid": 795825190410970,
+											"parameters": {
+												"instance-variable": "firePowerup",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 470792544751635,
+											"parameters": {
+												"seconds": "placeholderPlayer.fireTimer"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "placeholderPlayer",
+											"sid": 294146965228037,
+											"parameters": {
+												"instance-variable": "firePowerup",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 199715574453365
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1167,7 +1319,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 482986271344430,
+							"sid": 580020213954767,
 							"parameters": {
 								"interval-seconds": "0.01"
 							}
@@ -1175,9 +1327,41 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "placeholderPlayer",
-							"sid": 801734007975201,
+							"sid": 537401824575328,
+							"parameters": {
+								"instance-variable": "speed"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "placeholderPlayer",
+							"sid": 666234377040428,
+							"parameters": {
+								"color": "rgbEx(100, 100, 0)"
+							}
+						}
+					],
+					"sid": 173111766930595
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 828903836718291,
 							"parameters": {
 								"instance-variable": "firePowerup"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 482986271344430,
+							"parameters": {
+								"interval-seconds": "0.01"
 							}
 						}
 					],
@@ -1185,63 +1369,32 @@
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "placeholderPlayer",
-							"sid": 632628572338794,
+							"sid": 710056894651513,
 							"parameters": {
 								"instance-variable": "ColdMeter",
-								"value": "0.05"
+								"value": "placeholderPlayer.fireinc "
+							}
+						},
+						{
+							"id": "set-default-color",
+							"objectClass": "placeholderPlayer",
+							"sid": 540470870767741,
+							"parameters": {
+								"color": "rgbEx(100, 0, 0)"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "placeholderPlayer",
+							"sid": 445819219733068,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "ColdMeter",
+								"value": "placeholderPlayer.fireinc + placeholderPlayer.fireIncInc"
 							}
 						}
 					],
-					"sid": 601651021444782,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 898059533971940,
-									"parameters": {
-										"key": 32
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "placeholderPlayer",
-									"sid": 683792603808832,
-									"parameters": {
-										"instance-variable": "ColdMeter",
-										"comparison": 2,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "placeholderPlayer",
-									"sid": 416934065518438,
-									"parameters": {
-										"object": "fireProj",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "add-to-instvar",
-									"objectClass": "placeholderPlayer",
-									"sid": 370280572146629,
-									"parameters": {
-										"instance-variable": "ColdMeter",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 388898856909398,
-							"disabled": true
-						}
-					]
+					"sid": 601651021444782
 				}
 			],
 			"sid": 537464722022690
@@ -1645,6 +1798,17 @@
 					"sid": 628004086156628
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 405511117678650,
+					"parameters": {
+						"audio-file": "stinger-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"win\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "Stairs",
 					"sid": 458908332976994,
@@ -1652,25 +1816,33 @@
 						"animation": "\"nextLevel\"",
 						"from": "beginning"
 					}
-				},
+				}
+			],
+			"sid": 140287242184258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 151960669926036,
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 400264672811542,
 					"parameters": {
-						"seconds": "2.5"
+						"tag": "\"win\""
 					}
-				},
+				}
+			],
+			"actions": [
 				{
 					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 497509726986299,
+					"sid": 273014706835560,
 					"parameters": {
 						"which": "next"
 					}
 				}
 			],
-			"sid": 140287242184258
+			"sid": 647413059003001
 		},
 		{
 			"eventType": "block",
@@ -1718,24 +1890,11 @@
 					"behaviorType": "Platform"
 				},
 				{
-					"id": "compare-instance-variable",
+					"id": "is-boolean-instance-variable-set",
 					"objectClass": "placeholderPlayer",
-					"sid": 430999168321331,
+					"sid": 954178578818668,
 					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 3,
-						"value": "-ColdMeterMax"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 935053775028164,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 5,
-						"value": "ColdMeterMax"
+						"instance-variable": "dying"
 					},
 					"isInverted": true
 				}
@@ -1764,24 +1923,13 @@
 					"isInverted": true
 				},
 				{
-					"id": "compare-instance-variable",
+					"id": "is-boolean-instance-variable-set",
 					"objectClass": "placeholderPlayer",
-					"sid": 604273721673947,
+					"sid": 913956423507633,
 					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 2,
-						"value": "ColdMeterMax"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 782956282035027,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 4,
-						"value": "-ColdMeterMax"
-					}
+						"instance-variable": "dying"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1817,17 +1965,35 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 578022522611098,
+			"children": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "placeholderPlayer",
-					"sid": 659084558423444,
-					"parameters": {
-						"state": "mirrored"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 650625792754670,
+							"parameters": {
+								"instance-variable": "dying"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "placeholderPlayer",
+							"sid": 205732930250725,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 900336780771100
 				}
 			],
-			"sid": 578022522611098,
 			"isOrBlock": true
 		},
 		{
@@ -1850,17 +2016,35 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 761963020948767,
+			"children": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "placeholderPlayer",
-					"sid": 336915864646790,
-					"parameters": {
-						"state": "not-mirrored"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "placeholderPlayer",
+							"sid": 877403395412246,
+							"parameters": {
+								"instance-variable": "dying"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "placeholderPlayer",
+							"sid": 593455762257463,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 272508390115335
 				}
 			],
-			"sid": 761963020948767,
 			"isOrBlock": true
 		},
 		{
@@ -1873,24 +2057,11 @@
 					"behaviorType": "Platform"
 				},
 				{
-					"id": "compare-instance-variable",
+					"id": "is-boolean-instance-variable-set",
 					"objectClass": "placeholderPlayer",
-					"sid": 985552509360469,
+					"sid": 251895334869228,
 					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 3,
-						"value": "-ColdMeterMax"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "placeholderPlayer",
-					"sid": 897475463568405,
-					"parameters": {
-						"instance-variable": "ColdMeter",
-						"comparison": 5,
-						"value": "ColdMeterMax"
+						"instance-variable": "dying"
 					},
 					"isInverted": true
 				}
@@ -1940,67 +2111,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-x",
-					"objectClass": "placeholderPlayer",
-					"sid": 548192533127386,
-					"parameters": {
-						"comparison": 4,
-						"x-co-ordinate": "860"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 638624998442610,
-					"parameters": {
-						"which": "next"
-					}
-				}
-			],
-			"sid": 606352642513341,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "placeholderPlayer",
-					"sid": 509783407512735,
-					"parameters": {
-						"comparison": 2,
-						"x-co-ordinate": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 365989275935219,
-					"parameters": {
-						"which": "previous"
-					}
-				},
-				{
-					"id": "set-x",
-					"objectClass": "placeholderPlayer",
-					"sid": 948085926547501,
-					"disabled": true,
-					"parameters": {
-						"x": "850"
-					}
-				}
-			],
-			"sid": 364642532906526,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-end-of-layout",
 					"objectClass": "System",
 					"sid": 766002003322221
@@ -2040,6 +2150,121 @@
 			],
 			"sid": 580154277540872,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 286954951966396
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 667093953285281,
+					"parameters": {
+						"audio-file": "slow-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com",
+						"loop": "looping",
+						"volume": "-45",
+						"tag-optional": "\"main\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 234335471358470,
+					"parameters": {
+						"tag": "\"main\"",
+						"db": "-15",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 537749363436472,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 777603002552338,
+							"parameters": {
+								"tag": "\"main\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-paused",
+							"objectClass": "Audio",
+							"sid": 769108597955080,
+							"parameters": {
+								"tag": "\"main\"",
+								"state": "resume"
+							}
+						}
+					],
+					"sid": 648391142081496,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 177163751906859,
+					"parameters": {
+						"tag": "\"win\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 488839022232645,
+					"parameters": {
+						"tag": "\"main\""
+					}
+				}
+			],
+			"sid": 687422887740364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 244109144618134
+				}
+			],
+			"actions": [
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 849738165876464,
+					"parameters": {
+						"tag": "\"main\"",
+						"state": "pause"
+					}
+				}
+			],
+			"sid": 538636923127195
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 935923153450097
 		}
 	],
 	"sid": 629921702374011

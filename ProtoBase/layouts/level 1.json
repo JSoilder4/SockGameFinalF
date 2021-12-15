@@ -659,7 +659,12 @@
 						"ColdIncrement": 0.1,
 						"SpeedTimes": 2,
 						"coldIncInc": 0.01,
-						"Rug": false
+						"Rug": false,
+						"dying": false,
+						"fireTimer": 5,
+						"fireIncInc": 0.005,
+						"fireinc": 0.05,
+						"speed": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -683,8 +688,8 @@
 						}
 					},
 					"world": {
-						"x": 76.00000000000003,
-						"y": 851.12148833722,
+						"x": 1579,
+						"y": 50,
 						"width": 37.61093814342227,
 						"height": 65.81914175098896,
 						"originX": 0.5,
@@ -732,8 +737,8 @@
 						}
 					},
 					"world": {
-						"x": 76.00000000000003,
-						"y": 851.12148833722,
+						"x": 1579,
+						"y": 50,
 						"width": 37.610938,
 						"height": 65.819142,
 						"originX": 0.5,

@@ -10,6 +10,7 @@
 		"Couch",
 		"Stairs",
 		"outofboundsStopper",
-		"Table_"
+		"Table_",
+		"StairsDown"
 	]
 }

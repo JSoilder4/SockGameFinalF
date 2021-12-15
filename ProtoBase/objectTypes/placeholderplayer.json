@@ -51,6 +51,36 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 870526660597682
+		},
+		{
+			"name": "dying",
+			"type": "boolean",
+			"desc": "",
+			"sid": 678743984359061
+		},
+		{
+			"name": "fireTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 445065011178829
+		},
+		{
+			"name": "fireIncInc",
+			"type": "number",
+			"desc": "",
+			"sid": 194076230510218
+		},
+		{
+			"name": "fireinc",
+			"type": "number",
+			"desc": "",
+			"sid": 823312856516024
+		},
+		{
+			"name": "speed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 923976911553701
 		}
 	],
 	"behaviorTypes": [

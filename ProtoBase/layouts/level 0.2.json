@@ -291,7 +291,12 @@
 						"ColdIncrement": 0.1,
 						"SpeedTimes": 2,
 						"coldIncInc": 0.01,
-						"Rug": false
+						"Rug": false,
+						"dying": false,
+						"fireTimer": 5,
+						"fireIncInc": 0.005,
+						"fireinc": 0.05,
+						"speed": false
 					},
 					"behaviors": {
 						"Platform": {

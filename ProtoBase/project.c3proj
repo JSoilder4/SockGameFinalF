@@ -143,7 +143,9 @@
 			"TiledBackground2",
 			"TiledBackground4",
 			"TiledBackground3",
-			"THESOCKS"
+			"THESOCKS",
+			"StairsDown",
+			"Text"
 		],
 		"subfolders": []
 	},
@@ -225,6 +227,16 @@
 					"name": "CouchBounce_2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 356869113392900
+				},
+				{
+					"name": "slow-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 429209585445968
+				},
+				{
+					"name": "stinger-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 270294441264011
 				}
 			],
 			"subfolders": []
